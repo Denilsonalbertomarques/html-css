@@ -168,27 +168,23 @@ aside h2 {
     
 }
 
-aside .video {
+.video {
     position: relative;
     background-color: white;
     box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.192);
     border-radius: 5px;
-    margin-bottom: 59%;
+    margin: 0px -10px 20px 0px;
     padding: 20px;
-    max-width:700px;
-    min-width: 150px;
-    height: 300px;
-    margin: auto;
+    position: relative;
+    padding-bottom: 59%;
 }
 
 .video iframe {
     position: absolute;
     top: 5%;
     left: 5%;
-    min-height: 90%;
-    min-width: 90%;
-    max-height: 80%;
-    max-width: 80%;
+    width: 90%;
+    height: 90%;
 }
 
 #busca {
