@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+main {
+    background-image: linear-gradient(to right,  #12457A, #4468A2, #A8A3CC, #7B3F7F);
+    height: 500px;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+
+
+.especial {
+    text-align:center;
+    background-color: white;
+    border-radius: 10px;
+    height: 400px;
+    width: 200px;
+    color: #000000;
+}
+.especial:hover > p {
+    color: #11aaff;
+    text-decoration: underline;
+}
+.especial {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+img {
+    width: 199px;
+    border-radius: 4px;
+}

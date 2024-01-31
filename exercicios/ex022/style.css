@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+:root {
+
+   --cor1:#4abc55;
+   --cor2:#f5a211;
+   --cor3:#abc123;
+   --cor4:#ad00e1;
+   --cor5:#c256ad;
+   --cor6:#b5acd2;
+   --cor7:#08ada9;
+   --corh1:#e35019;
+   --corh2:#a1d3c5;
+   --corcode:#11aaff;
+
+   --fonte-padrao:Arial, Verdana, Helvetica, sans-serif;
+   --fonte-paragrafos: 'Bebas Neue', sans-serif;
+   --fonte-titulos: 'Open Sans', sans-serif;
+   --fonte-code: 'Times New Roman', 'Times', serif;
+}
+
+* {
+    font-weight: normal;
+    color: white;
+}
+
+h1 {
+    background-color:var(--corh1) ;
+    font-family: var(--fonte-titulos);
+}
+
+h2 {
+    background-color: var(--corh2);
+    font-family: var(--fonte-titulos);
+}
+
+pre > code {
+    background-color: var(--corcode);
+    font-family: var(--fonte-code);
+}
+
+#p1 {
+    background-color: var(--cor1);
+    font-family: var(--fonte-paragrafos);
+}
+
+#p2 {
+    background-color: var(--cor2);
+    font-family: var(--fonte-paragrafos);
+}
+
+#p3 {
+    background-color: var(--cor3);
+    font-family: var(--fonte-paragrafos);
+}
+
+#p4 {
+    background-color: var(--cor4);
+    font-family: var(--fonte-paragrafos);
+}
+
+#p5 {
+    background-color: var(--cor5);
+    font-family: var(--fonte-paragrafos);
+}
+
+#p6 {
+    background-color: var(--cor6);
+    font-family: var(--fonte-paragrafos);
+}
+
+#p7 {
+    background-color: var(--cor7);
+    font-family: var(--fonte-paragrafos);
+}
+
+ blockquote {
+    background-color: yellow;
+}
