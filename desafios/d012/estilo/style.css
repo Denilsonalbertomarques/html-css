@@ -10,26 +10,29 @@
 }
 
 :root {
-    --cor01:#000000;
-    --cor02:#ffffff;
-    --fonte-titulo: 'Passion One', sans-serif;
-    --fonte-paragrafos: 'Sriracha', cursive;
+    
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3: 'Sriracha', cursive;
 }
 
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte01);
 }
 
 header {
-    background-color: var(--cor01);
-    color: var(--cor02);
+    background-color: black;
+    color: white;
     text-align: center;
 }
 
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 8.5vw;
 }
 
 header > p {
@@ -37,7 +40,7 @@ header > p {
 }
 
 a {
-    color: var(--cor02);
+    color: white;
     text-decoration: none;
     font-weight: bolder;
 }
@@ -51,25 +54,49 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 .normal {
-    background-color: var(--cor02);
+    background-color: white;
 }
 
 .imagem {
     background-color: rgb(51, 51, 51);
-    color: var(--cor02);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+}
+
+#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .imagem > p {
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.253);
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.398);
 }
 
 footer {
-    background-color: var(--cor01);
+    background-color: black;
     text-align: center;
-    color: var(--cor02);
+    color: white;
     padding: 10px;
 }
