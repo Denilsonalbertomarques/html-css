@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            
+        }
+
+        caption {
+            background-color: grey;
+            padding: 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: white;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .cor {
+            background-color: greenyellow;
+        }
+
+        .cor1 {
+            background-color: skyblue;
+        }
+
+       .conteiner {
+            overflow-x: auto;
+       }
+
+       .destaque {
+            background-color: gray;
+            color: white;
+       }
+
+       .linha:nth-child(odd) {
+            background-color: lightgray;
+       }
+
+    </style>
+</head>
+<body>
+    
+    <div class="conteiner">
+        <table>
+            <colgroup>
+                <col class="cor">
+                <col class="cor1" span="4">
+                
+            </colgroup>
+            <caption>Filmes favoritos</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Pessoas</th>
+                    <th colspan="4" scope="colgroup">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="linha">
+                    <th scope="row">Denimontanna</th>
+                    <td>Esquadrão 6</td>
+                    <td>Alerta Vermelho</td>
+                    <td>Operação Supletivo</td>
+                    <td>Missão Impossível:Opearção Fantasma</td>
+                </tr>
+                <tr>
+                    <th scope="row">Tiago</th>
+                    <td>Esquadrão Suicida</td>
+                    <td>Predador</td>
+                    <td>Perdedores</td>
+                    <td>Aliens VS Predadores</td>
+                </tr>
+                <tr class="linha">
+                    <th scope="row">Ariclenio</th>
+                    <td>Missão Impossível:Opearção Fantasma</td>
+                    <td>Mercenários</td>
+                    <td>Até ao Último Combate</td>
+                    <td>Romeu Deve Morrer</td>
+                </tr>
+                <tr>
+                    <th scope="row">Manilson Jr</th>
+                    <td>Agentes Duplos</td>
+                    <td>Operação Zódiaco</td>
+                    <td>MIB:Homens De Negro</td>
+                    <td>Tripla Ameaça</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="destaque">
+                    <th colspan="4" scope="row">Total de filmes</th>
+                    <td>16</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

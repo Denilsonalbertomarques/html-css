@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            background-color: lightgray;
+            padding: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            
+        }
+
+        thead,tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: skyblue;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: blanchedalmond;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <h1>Tabela aqui em baixo &#x1F452; &darr;</h1>
+
+    <table>
+        <caption>Exemplo de tabela</caption>
+        <thead>
+            <tr>
+                <th scope="col">Pessoas</th>
+                <th scope="col" style="width: 50px;">números</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mengo</td>
+                <td class="num">5018903</td>
+            </tr>
+            <tr>
+                <td>Lobato</td>
+                <td class="num">5518770</td>
+            </tr>
+            <tr>
+                <td>Kimhung</td>
+                <td class="num">1609119</td>
+            </tr>
+            <tr>
+                <td>Therhk</td>
+                <td class="num">9001589</td>
+            </tr>
+            <tr>
+                <td>Swit</td>
+                <td class="num">71209871</td>
+            </tr>
+            <tr>
+                <td>Afegasty</td>
+                <td class="num">9945109</td>
+            </tr>
+            <tr>
+                <td>Trusty</td>
+                <td class="num">9933821</td>
+            </tr>
+            <tr>
+                <td>Juzhs</td>
+                <td class="num">9240912</td>
+            </tr>
+            <tr>
+                <td>Blackjack</td>
+                <td class="num">99125158</td>
+            </tr>
+            <tr>
+                <td>Benten</td>
+                <td class="num">5550918</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total</td>
+            <td class="num">191890050078</td>
+        </tfoot>
+    </table>
+
+</body>
+</html>
