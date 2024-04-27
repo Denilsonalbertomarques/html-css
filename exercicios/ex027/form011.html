@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .strong {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend class="strongz">Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" autocomplete="username" minlength="10" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iapel">Apelido:</label>
+                <input type="text" name="apel" id="iapel" autocomplete="nickname" required>
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" autocomplete="new-password" required minlength="4" maxlength="8">
+            </p>
+            <p>
+                <label for="iconf">corfima a senha:</label>
+                <input type="password" name="conf" id="iconf" autocomplete="new-password" minlength="4" maxlength="8" required>
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" pattern="\d{3,4}-\d{3,4}-\d{3,4}" required autocomplete="tel">
+            </p>
+            <p>
+                <label for="idata">Data de Nascimento:</label>
+                <input type="date" name="data" id="idata" autocomplete="bday-year">
+            </p>
+            <p>
+                <label class="strong">Genero:</label><br><br>
+                <label for="imas">Masculino</label>
+                <input type="radio" name="genero" id="imas">
+                <label for="ifem">Feminino</label>
+                <input type="radio" name="genero" id="ifem">
+            </p>
+            <p>
+                <label for="ipais">País:</label>
+                <select name="pais" id="ipais" required>
+                    <option value="">Selecionar</option>
+                    <optgroup label="Africa">
+                        <option value="">África do Sul</option>
+                        <option value="">Argélia</option>
+                        <option value="">Angola</option>
+                        <option value="">Marrocos</option>
+                        <option value="">Cabo Verde</option>
+                        <option value="">Moçambique</option>
+                        <option value="">Tunisia</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="">Portugal</option>
+                        <option value="">Espanha</option>
+                        <option value="">França</option>
+                        <option value="">Suiça</option>
+                        <option value="">Holanda</option>
+                        <option value="">Inglaterra</option>
+                        <option value="">Alemanha</option>
+                    </optgroup>
+                    <optgroup label="America">
+                        <optgroup label="Sul">
+                            <option value="">Brasil</option>
+                            <option value="">Argetina</option>
+                            <option value="">Colômbia</option>
+                            <option value="">Paraguai</option>
+                            <option value="">Uruguai</option>
+                        </optgroup>
+                        <optgroup label="Norte">
+                            <option value="">EUA</option>
+                            <option value="">Mexico</option>
+                            <option value="">Canadá</option>
+                            <option value="">Jamaica</option>
+                            <option value="">Honduras</option>
+                        </optgroup>
+                    </optgroup>
+                    <optgroup label="Ásia">
+                        <option value="">Japão</option>
+                        <option value="">China</option>
+                        <option value="">Síngapura</option>
+                        <option value="">Árabia Saudita</option>
+                        <option value="">EAU</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="pff" required>
+                <datalist id="pff" >
+                    <option >Desenvolvidor</option>
+                    <option >Bombeiro</option>
+                    <option >Vendedor</option>
+                    <option >Futebolista</option>
+                    <option >Basquetebolista</option>
+                    <option >Engenheiro</option>
+                    <option >Contabilista</option>
+                    <option >Gestor</option>
+                    <option >Balconista</option>
+                    <option >Motorista</option>
+                    <option >Cozinheiro</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="iphoto">Foto:</label>
+                <input type="file" name="photo" id="iphoto" autocomplete="photo" required>
+            </p>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend class="strongz">Outras informações</legend>
+            <p>
+                <label for="inumber">Número:</label>
+                <input type="number" name="number" id="inumber" min="-0" max="10" step="0.5" required>
+            </p>
+            <p>
+                <label class="strong">Tempo:</label><br><br>
+                <label for="imes">Mês:</label>
+                <input type="month" name="mes" id="imes" autocomplete="bday-month" required>
+                <label for="ihora">Hora:</label>
+                <input type="time" name="hora" id="ihora" required>
+            </p>
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor">
+            </p>
+            <p>
+                <label class="strong">Qual desporto pratica:</label><br><br>
+                <label for="ifute">Futeball</label>
+                <input type="checkbox" name="fute" id="ifute">
+                <label for="ihand">handball</label>
+                <input type="checkbox" name="hand" id="ihand">
+            </p>
+            <p>
+                <label for="ibaskt">Basktball</label>
+                <input type="checkbox" name="baskt" id="ibaskt">
+                <label for="ivole">Voleball</label>
+                <input type="checkbox" name="vole" id="ivole">
+            </p>
+            <p>
+                <label for="icom">Comentário:</label><br>
+                <textarea name="com" id="icom" cols="20" rows="5"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar" class="cor">
+                <input type="reset" value="Limpar" class="cor">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
