@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-image: url('../imagens/back-tablet.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    main {
+        background-color: rgba(255, 255, 255, 0.73);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        margin: auto;
+        width: 80vw;
+    }
+
+    h1 {
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.853);
+        text-align: center;
+        color: white;
+    }
+
+    #celular { display: none;}
+    #tablet { display: block; margin: auto;}
+    #pc { display: none;}
+    #impressora { display: none;}
+    #tv { display: none;}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-image: url('../imagens/back-pc.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    main {
+        background-color: rgba(255, 255, 255, 0.73);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        margin: auto;
+        width: 80vw;
+    }
+
+    h1 {
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.853);
+        text-align: center;
+        color: white;
+    }
+
+    #celular { display: none;}
+    #tablet { display: none;}
+    #pc { display: block; margin: auto;}
+    #impressora { display: none;}
+    #tv { display: none;}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    body {
+        background-image: url('../imagens/back-dm.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    main {
+        background-color: rgba(255, 255, 255, 0.73);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        margin: auto;
+        width: 80vw;
+    }
+
+    h1 {
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.853);
+        text-align: center;
+        color: white;
+        
+    }
+
+    h1::after {
+        margin: 2px;
+        content: ', i appreciate it';
+        
+    }
+
+    #celular { display: none;}
+    #tablet { display: none;}
+    #pc { display: none;}
+    #impressora { display: none;}
+    #tv { display: none;}
+}
+
+@media screen and (min-width: 1201px) {
+    body {
+        background-image: url('../imagens/back-tv.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    main {
+        background-color: rgba(255, 255, 255, 0.73);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        border: 2px solid black;
+        margin: auto;
+        width: 80vw;
+    }
+
+    h1 {
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.853);
+        text-align: center;
+        color: white;
+    }
+
+    #celular { display: none;}
+    #tablet { display: none;}
+    #pc { display: none;}
+    #impressora { display: none;}
+    #tv { display: block; margin: auto;}
+}
+
+@media print {
+    body {
+        background-image: url('../imagens/back-print.jpg');
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+    main {
+        background-color: none;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        margin: auto;
+        width: 80vw;
+    }
+
+    main::after {
+        content: 'Esse conteúdo foi criado pelo jornal Bad News, hugruay line';
+        text-decoration: overline;
+    }
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        text-shadow: none;
+        color: black;
+    }
+
+    #celular { display: none;}
+    #tablet { display: none;}
+    #pc { display: none;}
+    #impressora { display: block; margin: auto;}
+    #tv { display: none;}
+}
