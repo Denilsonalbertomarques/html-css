@@ -69,9 +69,3 @@ article p {
     text-align: justify;
     text-indent: 20px;
 }
-
-@media screen and (orientation:landscape) {
-    main {
-        width: 90vw;
-    }
-}
