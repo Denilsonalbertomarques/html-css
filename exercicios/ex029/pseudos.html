@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100vw;
+            height: 100vh;
+        } 
+
+        main {
+            width: 100vw;
+            height: 100vh;
+            
+        }
+
+        input {
+            width: 80vw;
+            height: 50px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            padding: 10px;
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+            transition: .7s;
+        }
+
+        input:focus {
+            background-color: rgb(210, 41, 75);
+            border-radius: 5px;
+            color: white;
+            
+
+        }
+
+        a {
+            display: block;
+            
+        }
+
+        a button {
+            width: 80vw;
+            height: 50px;
+            margin: 10px 20px;
+            padding: 10px;
+            color: white;
+            background-color:rgb(128, 174, 193);
+            border: none;
+            cursor: pointer;
+            transition: .8s;
+        }
+
+        a button:active {
+            background-color: rgb(210, 41, 75);
+            border-radius: 5px;
+            border: 1px solid black;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>    
+    <input type="text" value="Mengo">
+    <a href="#"><button>:active</button></a>
+    </main>
+</body>
+</html>
