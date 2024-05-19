@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade position</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        main {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 10px;
+        }
+
+        ul {
+            margin:10px ;
+        }
+
+        div {
+            background-color: rgba(241, 245, 30, 0.4);
+            border: 3px solid rgb(255, 208, 0);
+            padding: 0px 5px;
+        }
+
+        .static {
+            position: static;
+            
+        }
+
+        .fixed {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .relative {
+            position: relative;
+            left: 25px;
+        }
+
+        .relative02 {
+            position: relative;
+            height: 100px;
+        }
+
+        .absolute {
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+        }
+
+        .sticky {
+            position: sticky;
+            bottom: 0px;
+            top: 0px;
+        }
+
+        p {
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Propriedade Position</h1>
+        <ul>
+            <li>static</li>
+            <li>relative</li>
+            <li>fixed</li>
+            <li>absolute</li>
+            <li>sticky</li>
+        </ul>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis libero enim repellat, nisi rerum error, natus reprehenderit tempore odit quaerat suscipit minus vel est laboriosam inventore necessitatibus. Non, eligendi enim!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus numquam eos vel quas voluptatum laboriosam consequuntur provident esse consectetur. Rerum culpa perspiciatis dolor expedita cupiditate. Tempora inventore qui asperiores ut!</p>
+        <div class="static">
+            <p>Essa div tem o posicionamento definada como static</p>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi animi reprehenderit debitis perspiciatis veniam obcaecati modi optio inventore consectetur expedita, consequatur eveniet ex unde iste repellendus vel corporis itaque voluptate!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, a consequatur quam, delectus corporis, odio aperiam laboriosam quas quia magni porro id autem assumenda! Tenetur doloribus dolorum tempora quos facilis.</p>
+        <div class="fixed">
+            <p>Essa div tem o posicionamento definada como fixed</p>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quo, voluptas quae mollitia rem assumenda quasi, id tempora doloremque labore consequatur magnam alias at neque consequuntur minima! Cum, quis est.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam minima deleniti eos expedita inventore culpa possimus eum animi magni totam quaerat laboriosam deserunt! Ratione culpa veniam totam rerum illo!</p>
+        <div class="relative">
+            <p>Essa div tem o posicionamento definada como relative</p>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, maxime omnis. Aut, atque. Reprehenderit quas nostrum ea, numquam maxime repellat expedita nihil omnis libero, labore, et consequuntur ex illo odio!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque, harum asperiores saepe accusamus odio inventore voluptate obcaecati. Molestiae recusandae veritatis, eum alias libero assumenda dolorem ea est culpa voluptatem!</p>
+        <div class="relative02">
+            <p>Essa div tem o posicionamento definada como absolute</p>
+            
+            <div class="absolute">
+                <p>Essa div tem a position definida com absolute</p>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellendus delectus odit praesentium aspernatur, esse nam totam quisquam, alias ratione eaque porro minus natus sed, consectetur voluptates asperiores. Quasi, itaque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem tempora ut praesentium ullam quam nobis assumenda, necessitatibus id perspiciatis odio consectetur quidem, error rem ab totam sint enim aut illo?</p>
+        <div class="sticky">
+            <p>Essa div tem o posicionamento definada como sticky</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, facilis? Labore quis, voluptatibus quo aliquid consectetur totam sapiente deserunt mollitia vitae error molestias voluptatum voluptas fugit fugiat hic in quos!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur quo suscipit tempora error distinctio perspiciatis? Laborum ipsum accusantium modi nesciunt iste neque, incidunt consequuntur, optio tenetur, sunt cupiditate dolorem?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, voluptates ratione ab molestias sit officia, perferendis totam, soluta exercitationem quo numquam fuga beatae animi porro ut dolore ipsam impedit cumque.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum ab fuga quod debitis natus incidunt dolorum excepturi eveniet possimus repellendus distinctio quidem nulla, ipsa, saepe, quam velit tempora minus odio.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dignissimos dolor veniam quis tempora? Labore eaque accusamus veritatis saepe asperiores quidem corporis, magni sapiente dolorum nesciunt dolores repellendus, aspernatur aut!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate officiis nisi exercitationem ea fuga, explicabo eveniet, officia ipsam veritatis rem tenetur! Numquam unde reiciendis officia libero id. Corrupti, nesciunt dolorum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eius itaque, odio nisi soluta aliquid error nam ipsam ex voluptatum adipisci. Molestiae possimus voluptates libero, perferendis iure ea officia ut.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam libero ipsa nihil veritatis doloribus quia, corporis dolorum fugiat tempora facilis! Velit facilis obcaecati ea, minima excepturi deserunt consequatur officia quae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora in, repellendus consequatur impedit quibusdam error saepe modi sequi voluptatibus laboriosam, aspernatur veniam quaerat minima? Porro veniam adipisci illum voluptas nulla.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto aspernatur, dolore perferendis animi repellat ipsum vel, eveniet nihil rem nisi laudantium omnis quidem maxime ea quae minima incidunt amet quis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt distinctio, pariatur officiis non ut maiores? Eveniet voluptatum alias consequatur sapiente iusto quisquam! Porro numquam voluptatem accusantium provident unde? Temporibus, rem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iure adipisci nobis, magni illo assumenda quibusdam accusantium officiis laboriosam praesentium eaque reprehenderit aliquid ex accusamus suscipit corrupti perspiciatis recusandae dolores!</p>
+    </main>
+</body>
+</html>

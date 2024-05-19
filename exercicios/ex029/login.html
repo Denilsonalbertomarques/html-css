@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <div class="box">
+            <form action="login.php" method="post" autocomplete="off">
+                <h1>Entrar na plataforma</h1>
+                <div class="boxInput">
+                    <input type="email" name="email" id="email" required autocomplete="off">
+                    <label for="email">Email</label>
+                </div>
+                <div class="boxInput">
+                    <input type="password" name="senha" id="senha"  minlength="4"  maxlength="6"  required>
+                    <label for="senha">Senha</label>
+                </div>
+                <div class="boxlink">
+                    <a href="#">Esqueci a senha</a>
+                </div>
+                <div id="botao">
+                    <button type="submit" id="submit-botao">Entrar</button>
+                </div>
+                <div class="conteiner">
+                    <p>Já tem uma conta? <a href="#">Cadastrar</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

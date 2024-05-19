@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+       div {
+            margin: 20px;
+            height: 100px;
+            padding: 2px;
+            background-color: rgba(241, 245, 0, 0.692);
+            border: 3px solid rgb(255, 208, 0.4);
+       }
+
+       .static {
+        position: static;
+        top: -4px;
+       }
+
+       .fixed {
+        position: fixed;
+        bottom: 0px;
+        
+       }
+
+       .relative {
+        position: relative;
+        left: 10px;
+       }
+
+       .relative02 {
+        position: relative;
+        padding: 10px;
+        
+       }
+
+       .absolute {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        height: 40px;
+       }
+
+       .sticky {
+        position: sticky;
+        top: 0px;
+        bottom: 0px;
+       }
+
+       div ~ p {
+       
+       }
+
+       span {
+        color: blue;
+       }
+    </style>
+</head>
+<body>
+    <div class="static">
+        <p>Essa div tem o position definido com o valor <span>static</span>, que é valor padrão da propriedade position e de todos os elementos, isso significa que o elemento não tem uma posição especial definida, e ele vai ser posicionado de acordo o fluxo normal da página, um elemento após o outro.</p>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet perferendis, minima fugit sint voluptatem soluta ullam beatae facere excepturi voluptatum quia quibusdam sunt nostrum iure neque a sit enim laudantium!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime exercitationem nesciunt fuga aspernatur amet consequatur voluptate reiciendis eaque ex tenetur atque officiis asperiores, modi alias sint repudiandae. Nobis, cum!</p>
+    <div class="fixed">
+        <p>Essa div tem o position definido com o valor <span>fixed</span>, o elemento com essa position vai ser posicionado de forma relativa a janela do navegador onde o site e exibido, podemos posicionar usando as propriedades, <span>right, left, top, bottom</span>.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusamus adipisci consectetur possimus ipsum quo nisi, sit quos nobis pariatur architecto unde perspiciatis alias repellat labore vel dignissimos distinctio porro!</p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure dicta minima distinctio blanditiis. Nostrum nemo, sit quae tempora dolorem corrupti deleniti officia nam nihil hic ipsa modi veniam itaque dolore?
+    <div class="relative">
+        <p>o elemento com essa position, é posicionado de forma relativa a posição normal dele mesmo.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum a eius officiis corrupti quaerat unde ullam suscipit quod autem nostrum? Eos ad veritatis quae, odio aspernatur architecto quibusdam dignissimos repudiandae?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis quibusdam libero accusantium magnam impedit ducimus fugiat, eum praesentium, iure dolores dolor nulla suscipit natus molestiae velit? Sint temporibus veritatis rem!</p>
+    <div class="relative02">
+        <p>O elemento com essa position vai ser posicionada de forma relativa a posição do seu elemento pai, desde que seu elemento pai tenha a posição definida.</p>
+        <div class="absolute">
+            <p>e para configurar a posição nós também usamos as propriedades, <span>right, left, top, bottom</span></p>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto tempore dignissimos cum, explicabo quaerat aliquam nam illum? Possimus, consectetur architecto enim illum nostrum labore nesciunt aut distinctio aliquam cum cupiditate?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellendus sit, minima a veniam numquam accusantium distinctio! Quae commodi maiores vel sit magnam fugiat quo necessitatibus, voluptas perferendis quidem? Consectetur?</p>
+    <div class="sticky">
+        <p>com essa position o elemento vai ser posicionada com base na posição da barra de rolagem, alternando entre a position <span>relative e fixed</span></p>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptates nam delectus, et minima molestiae, laudantium cumque neque vitae, recusandae ipsum nisi dolores molestias voluptatibus consequatur laboriosam explicabo a laborum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iusto minus reiciendis voluptates, cupiditate facere eveniet veritatis quisquam, fuga explicabo quo repellat dolorum rerum doloribus labore a vel eligendi possimus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint id enim consequatur laborum doloremque, facere excepturi modi, tempora maiores ex veritatis itaque quo. Neque delectus, fugiat excepturi beatae illum nesciunt.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic reiciendis, deleniti iste quod nam. Sit libero nam voluptatem, doloribus cum perspiciatis quam nihil, sint laudantium expedita quis autem similique?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est voluptate sit, sequi saepe fuga deserunt hic quas vel adipisci ipsam blanditiis molestias aliquam soluta. Natus vero unde explicabo labore tempore?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia saepe, dolorum, architecto, praesentium quis nostrum deserunt exercitationem impedit odit illum facilis similique incidunt qui beatae autem molestiae aliquid repellat? Totam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ducimus nisi iure eveniet. Ullam nesciunt provident natus numquam amet harum quidem iste? Numquam consequatur et voluptas dolorem ad sequi impedit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex debitis provident laudantium aspernatur, voluptas vero. Facilis, maiores accusantium magnam obcaecati libero amet, aspernatur veniam a ab excepturi quam minima?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis harum nisi corrupti vel repellat porro quod maxime obcaecati unde dolor, ratione eos, velit numquam libero maiores voluptatem facere exercitationem neque?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, rem aliquam debitis eaque, quaerat voluptates voluptate velit impedit mollitia molestiae assumenda ab odit deleniti numquam placeat. Atque debitis iure numquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore velit quaerat fuga eius magnam quod, neque earum eaque modi blanditiis reiciendis saepe maxime voluptas provident alias ullam iusto assumenda tempora.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium consequuntur impedit! Ullam provident qui optio nulla a porro quasi, amet voluptas ratione at! Modi possimus magnam ipsum quasi nisi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, facilis iste laboriosam dolor, aliquam molestias molestiae ea aut nostrum impedit reiciendis obcaecati saepe enim accusantium aspernatur delectus at tempore quas.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit odio in voluptatibus aspernatur dignissimos reprehenderit reiciendis inventore temporibus repudiandae quas iure magni, similique dolores. Sed laudantium consequatur aliquam placeat.</p>
+</body>
+</html>

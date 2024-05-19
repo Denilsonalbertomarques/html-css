@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        #bloco1, #bloco2, #bloco3, #bloco4 {
+            width: 200px;
+            height: 300px;
+            background-color:#E6D4C3;
+            float: left;
+            margin: 0px 0px 60px 15px;
+            text-align: center;
+            
+        }
+
+        h2 {
+            
+            color: white
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        #bloco1 {
+            overflow: visible;
+        }
+
+        #bloco2 {
+            overflow: scroll;
+        }
+
+        #bloco3 {
+            overflow: hidden;
+        }
+
+        #bloco4 {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="bloco1">
+        <h2>Bloco 01</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti dolorum quasi libero necessitatibus atque eos culpa quo hic omnis rem inventore natus exercitationem consequuntur, aliquid numquam quam est molestiae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eius dignissimos laudantium ratione delectus perferendis in ut voluptates, nemo, sapiente dolorem minima eum voluptate maiores consequatur fugit voluptatem laborum minus.</p>
+    </div>
+    <div id="bloco2">
+        <h2>Bloco 02</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti dolorum quasi libero necessitatibus atque eos culpa quo hic omnis rem inventore natus exercitationem consequuntur, aliquid numquam quam est molestiae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eius dignissimos laudantium ratione delectus perferendis in ut voluptates, nemo, sapiente dolorem minima eum voluptate maiores consequatur fugit voluptatem laborum minus.</p>
+    </div>
+    <div id="bloco3">
+        <h2>Bloco 03</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti dolorum quasi libero necessitatibus atque eos culpa quo hic omnis rem inventore natus exercitationem consequuntur, aliquid numquam quam est molestiae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eius dignissimos laudantium ratione delectus perferendis in ut voluptates, nemo, sapiente dolorem minima eum voluptate maiores consequatur fugit voluptatem laborum minus.</p>
+    </div>
+    <div id="bloco4">
+        <h2>Bloco 04</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti dolorum quasi libero necessitatibus atque eos culpa quo hic omnis rem inventore natus exercitationem consequuntur, aliquid numquam quam est molestiae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eius dignissimos laudantium ratione delectus perferendis in ut voluptates, nemo, sapiente dolorem minima eum voluptate maiores consequatur fugit voluptatem laborum minus.</p>
+    </div>
+</body>
+</html>

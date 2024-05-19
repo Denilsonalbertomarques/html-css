@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício com overflow</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #caixa01, #caixa02, #caixa03 {
+            margin: 20px;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            font-size: 1.2em;
+            background-color: salmon;
+            border-radius: 10px;
+            float: left;
+            
+        }
+
+        #caixa01 p:not(#segundo) {
+            color: white;
+        }
+
+        p {
+            position: relative;
+            left: 13px;
+        }
+
+       
+        #caixa01 {
+            overflow: auto;
+        }
+
+        #caixa02 {
+            overflow: scroll;
+            
+        }
+
+        #caixa03 {
+            overflow: hidden;
+        }
+
+        #caixa03 p:not(#meio) {
+            color: blue;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="caixa01">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis dolore excepturi obcaecati ullam quidem mollitia odio praesentium porro, laudantium sint eos saepe at quia perferendis perspiciatis similique consequatur neque laborum?</p>
+        <p id="segundo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dicta blanditiis qui a! Ipsam numquam cum aliquid. Non doloremque cum asperiores maxime laudantium rerum quasi rem, repellendus dicta similique saepe?</p>
+    </div>
+    <div id="caixa02">
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae rem autem perspiciatis repellendus reiciendis, molestias delectus accusamus. Quia debitis incidunt odio, quo deserunt dicta veniam reprehenderit tenetur officia, corporis cum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas non culpa labore amet laboriosam distinctio sunt voluptatibus illo perferendis rem quibusdam enim, maxime et eligendi totam facilis incidunt ullam explicabo.</p>
+    </div>
+    <div id="caixa03">
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae rem autem perspiciatis repellendus reiciendis, molestias delectus accusamus. Quia debitis incidunt odio, quo deserunt dicta veniam reprehenderit tenetur officia, corporis cum.</p>
+        <p id="meio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui impedit omnis vitae illum! Quis unde voluptatibus sit nulla incidunt aperiam vitae aut, molestias suscipit, illum commodi, ipsam fugiat laborum. Nam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas non culpa labore amet laboriosam distinctio sunt voluptatibus illo perferendis rem quibusdam enim, maxime et eligendi totam facilis incidunt ullam explicabo.</p>
+    </div>
+</body>
+</html>

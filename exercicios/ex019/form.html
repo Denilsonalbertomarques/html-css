@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+
+        .inputbox {
+            margin: 20px;
+        }
+
+        .inputbox label {
+            pointer-events:none;
+        }
+
+      
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="login.php" method="post" autocomplete="on">
+                <div class="inputbox">
+                    <input type="text" name="nome" id="nome" autocomplete="name" required>
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="inputbox">
+                    <input type="email" name="email" id="email"  autocomplete="email">
+                    <label for="email">Email</label>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+</body>
+</html>

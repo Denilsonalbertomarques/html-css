@@ -5,48 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Float</title>
     <style>
-
         * {
-            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: 0px;
         }
 
-        #caixa01, #caixa02 {
+        #bloco1, #bloco2, #bloco3 {
             width: 200px;
             height: 200px;
-            padding: 10px;
-        }
-
-        #caixa01 {
+            margin: 2px;
             float: left;
-            background-color: orangered;
+        }
+
+        #bloco1 {
+           background-color: darkgoldenrod;
+           
 
         }
 
-        #caixa02 {
-            float: right;
-            background-color: indigo;
+        #bloco2 {
+            background-color: darkmagenta;
+            
         }
 
-
-        #caixa01, #caixa02 p {
-            text-align: center;
-            color: white;
-            font-size: 2em;
+        #bloco3 {
+            background-color: darkolivegreen;
+            
         }
 
-        span {
-            color: black;
-            text-transform: uppercase;
-        }
 
     </style>
 </head>
 <body>
-        <div id="caixa01">
-            <p>Atenção, olha com o<span> float a esquerda.</span></p>
-        </div>
-        <div id="caixa02">
-            <p>Atenção, olha com o<span> float a direita.</span></p>
-        </div>
+    <div id="bloco1"></div>
+    <div id="bloco2"></div>
+    <div id="bloco3"></div>
 </body>
 </html>
