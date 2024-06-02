@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: green;
+        }
+
+        .conteiner {
+            width: 100%;
+            border: 2px solid white;
+            padding: 20px;
+        }
+
+        .elemento1 {
+            background-color: white;
+            width: 150px;
+            height: 150px;
+            
+             transition-timing-function: ease;
+            transition-duration: 2s;
+            /* transition-delay: 5s; */
+        }
+
+        .elemento1:hover {
+            border-radius: 100%;
+            transform: translateX(500px);
+        }
+
+        .elemento2 {
+            background-color: white;
+            width: 150px;
+            height: 150px;
+            transition-timing-function: linear;
+            transition-duration: 20s;
+            transition-delay: 2s;
+        }
+
+        .elemento2:hover {
+            transform: rotateX(10turn);
+            border-radius: 100%;
+        }
+
+       .elemento3 {
+            background-color: white;
+            width: 150px;
+            height: 150px;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+            transition-delay: 1s;
+       }
+
+       .elemento3:hover {
+            transform: scale(0.5);
+            border-radius: 100%;
+       }
+
+       .elemento4 {
+            background-color: white;
+            width: 150px;
+            height: 150px;
+            transition-timing-function: ease-in-out;
+            transition-duration: 10s;
+            transition-delay: 2s;
+       }
+
+       .elemento4:hover {
+            transform: rotateY(-20turn);
+            border-radius: 100%;
+       }
+
+       .elemento5 {
+        background-color: white;
+            width: 150px;
+            height: 150px;
+            transition-timing-function:ease-in ;
+            transition-duration: 2s;
+            transition-delay: 1s;
+
+       }
+       
+       .elemento5:hover {
+            transform: rotate(5turn);
+            border-radius: 100%;
+       }
+    </style>
+</head>
+<body>
+        <div class="conteiner">
+            <div class="elemento1"></div>
+        </div>
+        <div class="conteiner">
+            <div class="elemento2"></div>
+        </div>
+        <div class="conteiner">
+            <div class="elemento3"></div>
+        </div>
+        <div class="conteiner">
+            <div class="elemento4"></div>
+        </div>
+        <div class="conteiner">
+            <div class="elemento5"></div>
+        </div>
+</html>

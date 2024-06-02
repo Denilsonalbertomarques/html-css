@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .conteudo {
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            margin: 20px;
+            transition-property: width, height, border-radius ;
+            transition-delay: .5s, 3s, 2s;
+            transition-duration: 2s, 3s, 5s;
+            transition-timing-function: linear;
+        }
+
+        .conteudo:hover {
+            width: 400px;
+            height: 400px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .start {
+            counter-reset: denilson;
+        }
+
+        p {
+            counter-increment: denilson;
+        }
+
+        p::before {
+            padding: 0px 7px;
+            content: '['counter(denilson)']';
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="start">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro explicabo accusantium possimus beatae aliquam optio facilis voluptas, repudiandae earum, tempore excepturi tenetur id numquam dignissimos ratione error mollitia sed consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro explicabo accusantium possimus beatae aliquam optio facilis voluptas, repudiandae earum, tempore excepturi tenetur id numquam dignissimos ratione error mollitia sed consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro explicabo accusantium possimus beatae aliquam optio facilis voluptas, repudiandae earum, tempore excepturi tenetur id numquam dignissimos ratione error mollitia sed consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro explicabo accusantium possimus beatae aliquam optio facilis voluptas, repudiandae earum, tempore excepturi tenetur id numquam dignissimos ratione error mollitia sed consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro explicabo accusantium possimus beatae aliquam optio facilis voluptas, repudiandae earum, tempore excepturi tenetur id numquam dignissimos ratione error mollitia sed consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro explicabo accusantium possimus beatae aliquam optio facilis voluptas, repudiandae earum, tempore excepturi tenetur id numquam dignissimos ratione error mollitia sed consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro explicabo accusantium possimus beatae aliquam optio facilis voluptas, repudiandae earum, tempore excepturi tenetur id numquam dignissimos ratione error mollitia sed consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro explicabo accusantium possimus beatae aliquam optio facilis voluptas, repudiandae earum, tempore excepturi tenetur id numquam dignissimos ratione error mollitia sed consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro explicabo accusantium possimus beatae aliquam optio facilis voluptas, repudiandae earum, tempore excepturi tenetur id numquam dignissimos ratione error mollitia sed consectetur.</p>
+        </div>
+    </main>
+</body>
+</html>

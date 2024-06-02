@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        main {
+            counter-reset: denilson;
+            counter-reset: mengo;
+        }
+
+        .conteiner {
+            width: 400px;
+            height: 200px;
+            margin: 20px auto;
+            border: 10px solid rgba(40, 39, 39, 0.585);
+            padding: 15px;
+            counter-increment: mengo;
+        }
+
+        .conteiner  p {
+            padding: 10px;
+            
+       }
+
+       .conteiner  p::before {
+            content: '['counter(mengo)']';
+            padding: 0px 5px 0px 0px;
+       }
+
+       .conteiner ~ p {
+        border: 2px solid red;
+        padding: 12px;
+        
+        counter-increment: denilson;
+       }
+
+       .conteiner ~ p::before {
+            content: '['counter(denilson)']';
+            padding: 0px 5px 0px 0px;
+       }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet molestias quo recusandae, placeat excepturi assumenda ad reprehenderit quos inventore iure provident fugit a esse quia saepe veniam voluptates corrupti?</p>
+    </main>
+</body>
+</html>

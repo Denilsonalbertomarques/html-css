@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 70px;
+            height: 70px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+            border: 1px solid white;
+        }
+
+        .vermelho {
+            background-color: red;
+            transform: translateY(100px);
+        }
+
+        .pai {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(20, 19, 19);
+        }
+
+        .verde {
+            background-color: green;
+            /* transform: rotate(65deg); */
+            /* transform-origin: left center; */
+        }
+
+        .verde:hover {
+            transform: rotate(1turn);
+            transition: .7s;
+            transition-duration: infinite;
+            transition-delay: .2s;
+            transition-timing-function: ease;
+        }
+
+        .azul {
+            background-color: blue;
+            transform: translateY(100px);
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        
+        <div class="vermelho"></div>
+        <div class="pai">
+            <div class="verde"></div>
+        </div>
+        <div class="azul"></div>
+    </main>
+</body>
+</html>

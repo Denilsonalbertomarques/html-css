@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: green;
+            
+        }
+
+        .conteiner {
+            
+            border: 1px solid white;
+            padding: 20px;
+        }
+
+        .elemento1 {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            transition-duration: 2s, 2s;
+            transition-delay: 1s, 2s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .elemento1:hover {
+            transform: translateX(20px) scale(0.2) rotate(2turn);
+            background-color: transparent;
+        }
+
+        .elemento2 {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            transition-duration: 6s, 6s;
+            transition-delay: .8s, .9s;
+            transition-timing-function: linear;
+            
+
+        }
+
+        .elemento2:hover {
+            transform: translateX(150px) rotateY(5turn);
+            background-color: #5d35c1;
+        }
+
+        .elemento3 {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+
+            transition-duration: 2s, 2s, 2s, 2s;
+            transition-delay: .5s, .5s, .5s, .5s;
+            transition-timing-function: ease-in;
+
+        }
+
+        .elemento3:hover {
+            border: 5px solid yellow;
+            background-color: black;
+            transform: translateX(160px);
+            border-radius: 50%;
+        }
+
+        .elemento4 {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            transition-duration: 2s, 2s, 2s, 2s;
+            transition-delay: .5s, .5s, .6s, .6s;
+            transition-timing-function: ease;
+        }
+
+        .elemento4:hover {
+            transform: translateY(-20px) scale(0.5);
+            background-color: blue;
+            border: 2px solid red;
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+        <div class="conteiner">
+            <div class="elemento1"></div>
+        </div>
+        <div class="conteiner">
+            <div class="elemento2"></div>
+        </div>
+        <div class="conteiner">
+            <div class="elemento3"></div>
+        </div>
+        <div class="conteiner">
+            <div class="elemento4"></div>
+        </div>
+</body>
+</html>

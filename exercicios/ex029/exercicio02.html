@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+        .conteiner > p:not(.meio):first-letter {
+            font-size: 1.5em;
+            color: red;
+        }
+
+        .conteiner  > .meio::first-line {
+            text-decoration: underline;
+            font-size: 1.2em;
+        }
+
+        .conteiner  > .meio::selection{
+            background-color: green;
+        } 
+
+        .conteiner2 p::first-line {
+            color: orange;
+            background-color: aqua;
+        }
+
+        ul  li:first-child{
+            text-align: center;
+        } 
+
+        ul li:nth-child(3n-1) {
+            background-color: gold;
+            color: blue;
+        }
+
+        /* ul li::marker {
+            color: magenta;
+        } */
+
+
+        .conteiner3 ~ h2:not(.sub)::selection {
+            color: red;
+            background-color: yellow;
+        }
+
+        .conteiner3 + h3 {
+            background-color: magenta;
+            color: blue;
+        }
+
+        .conteiner3 ~ p::selection {
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="conteiner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium error qui distinctio ratione cumque aut ex! Molestiae ab, perspiciatis voluptatum magnam eaque rem nostrum. Quam omnis quis id maxime autem.</p>
+
+            <p class="meio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quas repudiandae eligendi velit delectus esse dolores tempora laudantium, aperiam nihil earum architecto maiores, recusandae quasi est, consequatur voluptas explicabo sit!</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At vero voluptate nobis, ratione est perspiciatis nisi fuga nam iste accusamus perferendis reprehenderit, saepe ea iure harum facere quis! Praesentium, est!</p>
+        </div>
+        <div class="conteiner2">
+            <h1>Lorem</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dignissimos officia nihil animi assumenda perspiciatis sint, laudantium ipsum impedit ipsa iusto facere rerum esse et excepturi sunt voluptate ad voluptas?</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, distinctio, aliquid adipisci molestiae iusto expedita voluptatum recusandae sequi, ratione eveniet hic eum itaque animi! Nemo maxime ex harum sunt molestias?</p>
+        </div>
+        <ul>
+            
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+            <li>Itens</li>
+        </ul>
+        <div class="conteiner3"></div>
+            <h3>lgkgkgkg</h3>
+            <h2>Mengo</h2>
+            <h3>kdkdkdkdkdd</h3>
+            <h2>Mengo</h2>
+            <h4>dhdhdhdhd</h4>
+            <h2>Mengo</h2>
+            <h4>hjsjjssjss</h4>
+            <h2>Mengo</h2>
+            <h2>Mengo</h2>
+            <h2>Mengo</h2>
+            <h2>Mengo</h2>
+            <h2>Mengo</h2>
+            <h2>Mengo</h2>
+            <h2>Mengo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eum asperiores itaque maxime dicta cumque, modi nam atque dignissimos quae ullam, suscipit excepturi! Numquam sed reprehenderit voluptate ex neque iusto!</p>
+            <h2>Mengo</h2>
+            <h2>Mengo</h2>
+            <h2>Mengo</h2>
+            <h2>Mengo</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, iure. Vel saepe eum atque, earum laborum perferendis eius impedit non possimus. Nihil deserunt aliquid laboriosam? Maiores dicta unde doloribus. Dicta!</p>
+            <h2>Mengo</h2>
+            <h2>Mengo</h2>
+            <h2>Mengo</h2>
+            <h2>Mengo</h2>
+            <h2 class="sub">Mengo</h2>
+            <h2>Mengo</h2>
+            <h2>Mengo</h2>
+        
+    </main>
+</body>
+</html>

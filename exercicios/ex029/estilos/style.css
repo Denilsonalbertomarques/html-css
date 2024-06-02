@@ -27,7 +27,6 @@ main {
 .box {
     width: 315px;
     background-color: transparent;
-    backdrop-filter: blur(20px);
     border: 1px solid #9b9b9b;
     border-radius: 10px;
     padding: 10px;
@@ -62,12 +61,15 @@ h1 {
     top: 40%;
     transform: translateY(-60%);
     pointer-events: none;
+    transition-duration: .6s;
+    transition-delay: .1s;
+    transition-timing-function: ease;
 }
 
 .boxInput input:focus ~ label,
  .boxInput input:valid ~ label {
     top: -5px;
-    transition: .5s;
+    
 }
 
 .boxlink {

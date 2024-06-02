@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body, html {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body {
+            background-color: rgb(7, 23, 39);
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 400px;
+            border: 1px solid green;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: rgb(1, 1, 15);
+            transition-duration: .5s;
+            transition-delay: .1s;
+            transition-timing-function: ease-in-out;
+        }
+        
+        
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .boxInput {
+            position: relative;
+            width: 100%;
+            margin: 10px 0px;
+            padding: 10px 0px;
+        }
+
+        .boxInput input {
+            width: 100%;
+            height: 100%;
+            padding: 10px 20px;
+            outline: none;
+            border: none;
+            background-color: rgb(1, 1, 15);
+            border: 1px solid green;
+            color: white;
+            font-size: 1em;
+            border-radius: 10px;
+            transition-duration: .5s;
+            transition-delay: .1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .boxInput input:hover,
+        .boxInput input:valid,
+        .boxInput input:focus {
+            border: 1px solid white;
+        }
+
+        .boxInput label {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 16px;
+            color: green;
+            pointer-events: none;
+            transition-duration: .5s;
+            transition-delay: .1s;
+            transition-timing-function: ease-in-out;
+            font-size: 1em;
+        }
+
+        .boxInput input:focus ~ label,
+        .boxInput input:valid ~ label {
+            color: white;
+            transform: translateY(-33px) scale(0.9);
+            background-color: rgb(1, 1, 15);
+            padding: 0px 8px;
+            
+            
+        }
+
+        .boxInput input::placeholder {
+            opacity: 0;
+            color: green;
+            transition-duration: .2s;
+            transition-delay: .5s;
+            transition-timing-function: ease;
+        }
+
+        .boxInput input:focus::placeholder {
+            opacity: 1;
+            color: white;
+        }
+
+        .boxbotao {
+            width: 100%;
+            margin: 10px 0px 0px 0px;
+            padding: 10px 0px;
+        }
+
+        .boxbotao button {
+            width: 40%;
+            height: 40%;
+            padding: 10px;
+            outline: none;
+            border: none;
+            font-size: 1em;
+            border-radius: 10px;
+            color: rgb(1, 1, 15);
+            background-color: green;
+            cursor: pointer;
+            transition-duration: .5s, .5s, .5s;
+            transition-delay: .1s, .1s, .1s;
+            transition-timing-function: linear;
+        }
+
+        .boxbotao button:hover {
+            border: 1px solid green;
+            background-color: transparent;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">
+            <form action="login.php" method="post" autocomplete="off">
+                <h1>Login</h1>
+                <div class="boxInput">
+                    
+                    <input type="email" name="email" id="email" required autocomplete="off" placeholder="digite seu e-mail" >
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="boxInput">
+                    <input type="password" name="password" id="password" minlength="4" maxlength="6" required autocomplete="off" placeholder="digite sua senha">
+                    <label for="Password">Password</label>
+                </div>
+                <div class="boxbotao">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

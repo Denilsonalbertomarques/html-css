@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos first-letter, first-line e selection</title>
+    <style>
+        p:not(.content-first-line, .content-selection)::first-letter {
+            color: red;
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 ~ p.content-first-line::first-line {
+            background-color: yellowgreen;
+            font-size: 1.2em;
+        }
+
+        h2 ~ .content-selection::selection {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Pseudo-elementos</h1>
+        <h2>First-letter</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi expedita temporibus itaque maiores ut. Tempore atque vero quibusdam consectetur accusantium amet, libero aspernatur earum minus ea cum fugit nam quae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi expedita temporibus itaque maiores ut. Tempore atque vero quibusdam consectetur accusantium amet, libero aspernatur earum minus ea cum fugit nam quae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi expedita temporibus itaque maiores ut. Tempore atque vero quibusdam consectetur accusantium amet, libero aspernatur earum minus ea cum fugit nam quae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi expedita temporibus itaque maiores ut. Tempore atque vero quibusdam consectetur accusantium amet, libero aspernatur earum minus ea cum fugit nam quae.</p>
+        <h2>first-line</h2>
+        <p class="content-first-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos adipisci placeat enim dolorum delectus quibusdam dolores quidem veritatis cumque. Laudantium quod dolorem alias aliquid tenetur. Et accusantium sunt quas fugiat!</p>
+        <p class="content-first-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos adipisci placeat enim dolorum delectus quibusdam dolores quidem veritatis cumque. Laudantium quod dolorem alias aliquid tenetur. Et accusantium sunt quas fugiat!</p>
+        <p class="content-first-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos adipisci placeat enim dolorum delectus quibusdam dolores quidem veritatis cumque. Laudantium quod dolorem alias aliquid tenetur. Et accusantium sunt quas fugiat!</p>
+        <p class="content-first-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos adipisci placeat enim dolorum delectus quibusdam dolores quidem veritatis cumque. Laudantium quod dolorem alias aliquid tenetur. Et accusantium sunt quas fugiat!</p>
+        <h2>Selection</h2>
+        <p class="content-selection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deleniti voluptas quod ad, molestiae optio, quibusdam, assumenda nostrum iure modi voluptatum laboriosam nam quas quae ut ipsa saepe dolor ipsum.</p>
+        <p class="content-selection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deleniti voluptas quod ad, molestiae optio, quibusdam, assumenda nostrum iure modi voluptatum laboriosam nam quas quae ut ipsa saepe dolor ipsum.</p>
+        <p class="content-selection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deleniti voluptas quod ad, molestiae optio, quibusdam, assumenda nostrum iure modi voluptatum laboriosam nam quas quae ut ipsa saepe dolor ipsum.</p>
+        <p class="content-selection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deleniti voluptas quod ad, molestiae optio, quibusdam, assumenda nostrum iure modi voluptatum laboriosam nam quas quae ut ipsa saepe dolor ipsum.</p>
+        <p class="content-selection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deleniti voluptas quod ad, molestiae optio, quibusdam, assumenda nostrum iure modi voluptatum laboriosam nam quas quae ut ipsa saepe dolor ipsum.</p>
+        <p class="content-selection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deleniti voluptas quod ad, molestiae optio, quibusdam, assumenda nostrum iure modi voluptatum laboriosam nam quas quae ut ipsa saepe dolor ipsum.</p>
+    </main>
+</body>
+</html>
