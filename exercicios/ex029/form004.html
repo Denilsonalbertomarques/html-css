@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Formulário</title>
+    <style>
+        * {
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+        body {
+            height: 100vh;
+            background-image: linear-gradient(-45deg,#ffc351, #ff7253, #fd5754 );
+            width: 100vw;
+        }
+
+        main {
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+        }
+
+        .box {
+            width:310px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.647);
+            padding: 30px 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        
+        .boxInput {
+            width: 100%;
+            height: 50px;
+            position: relative;
+            margin: 20px 0px;
+        }
+
+        .boxInput input {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #000000;
+            padding: 10px 20px;
+            outline: none;
+            border-radius: 25px;
+        }
+
+        .boxInput input::placeholder {
+            font-size: 1.2em;
+        }
+
+        .boxInput svg {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+        }
+
+        .boxbuttom {
+            width: 100%;
+            
+        }
+
+        .boxbuttom button[type="submit"] {
+            width: 100%;
+            margin-top: 15px;
+            padding: 15px;
+            outline: none;
+            border: none;
+            background-image: linear-gradient(-45deg,#ffc351, #ff7253, #fd5754 );
+            border-radius: 25px;
+            cursor: pointer;
+            transition-duration: .4s;
+            transition-delay: .2s;
+            transition-timing-function: ease-in-out;
+        } 
+    </style>
+</head>
+<body>
+    <main>
+       <div class="box">
+            <form action="login.php" method="post" autocomplete="on">
+                <h1>Sign-up</h1>
+                <div class="boxInput">
+                    <input type="text" name="name" id="name" minlength="4" maxlength="8" autocomplete="username" required placeholder="username">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#ff7253"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
+                </div>
+                <div class="boxInput">
+                    <input type="email" name="email" id="email" autocomplete="email" required placeholder="e-mail">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#ff7253"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                </div>
+                <div class="boxInput">
+                    <input type="password" name="password" id="password" minlength="4" maxlength="8" autocomplete="new-password" required placeholder="password">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#ff7253"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/></svg>
+                </div>
+                <div class="boxbuttom">
+                    <button type="submit">Sign-up</button>
+                </div>
+            </form>
+       </div>
+    </main>
+</body>
+</html>
