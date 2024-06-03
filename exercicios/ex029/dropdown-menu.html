@@ -17,172 +17,109 @@
 
         body {
             height: 100vh;
+            width: 100vw;
             background-image: url('imagens/espaco.jpg');
             background-repeat: no-repeat;
             background-size: cover;
-            /* background-position: center; */
         }
 
         nav {
             background-color: #1e90ff;
-            text-align: center;
-            
+            padding: 10px;
         }
 
         nav ul {
             display: inline-flex;
+            margin-left: 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
         }
 
         nav ul li {
-            padding: 15px;
-            margin: 12px ;
+            margin: 0px 45px;
         }
 
-        nav ul li a {
+        nav  ul li a {
             text-decoration: none;
-            color: white;
+            color: #ffffff;
         }
 
-        .dropdown-menu {
+        .sub-menu {
             display: none;
         }
 
-        nav ul li:hover .dropdown-menu {
+        nav li:hover .sub-menu {
             display: block;
             position: absolute;
-            margin-top: 15px;
             background-color: #1e90ff;
-            
-        }
-
-        nav ul li:hover .dropdown-menu ul {
-            display: block;
-            transition: .7s;
-        }
-
-        nav ul li:hover .dropdown-menu {
-            
             border-radius: 0px 0px 10px 10px;
-            
-            padding: 0px 10px;
         }
 
-        nav ul li:hover .dropdown-menu li {
-           text-align: center;
-           transition: .5s;
+        nav li:hover .sub-menu ul {
+            display: block;
+            padding: 10px;
         }
 
-        nav ul li:hover .dropdown-menu  li:hover {
-            background-color: #14497d;
+        nav li:hover .sub-menu li {
+            margin-top: 20px;
+            padding: 20px;
+            transition: .4s ease;
+            text-align: center;
+        }
+
+        .sub-menu li:hover {
             border-radius: 10px;
-            
+            background-color: rgb(23, 75, 126);
         }
 
-        .sub-dropdown-menu {
-            display: none;
-            
-        }
-
-
-
-         .desk:hover .sub-dropdown-menu {
-            display: block;
-            position: absolute;
-            margin-top: -40px;
-            background-color: #1e90ff;
-            margin-left: 140px;
-            border-radius: 0px 0px 10px 10px;
-
-        }
-
-
-
-         .desk:hover .sub-dropdown-menu ul {
-            display: block;
-        }
     </style>
 </head>
 <body>
     <nav>
         <ul>
             <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
                 <a href="#">Cursos</a>
-                <div class="dropdown-menu">
+                <div class="sub-menu">
                     <ul>
                         <li>
-                            <a href="#">Markting Digital</a>
+                            <a href="#">Linguagem C</a>
                         </li>
-                        <li class="desk">
-                            <a href="#">Desktop</a>
-                            <div class="sub-dropdown-menu">
-                                <ul>
-                                    <li>
-                                        <a href="#">Linguagem C</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Java</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">C#</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Python</a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <li>
+                            <a href="#">C#</a>
                         </li>
-                        <li class="desk">
-                            <a href="#">WEB</a>
-                            <div class="sub-dropdown-menu">
-                                <ul>
-                                    <li>
-                                        <a href="#">HTML</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">CSS</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">JavaScript</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Boostrap</a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <li>
+                            <a href="#">C++</a>
+                        </li>
+                        <li>
+                            <a href="#">Java</a>
+                        </li>
+                        <li>
+                            <a href="#">Python</a>
                         </li>
                     </ul>
                 </div>
             </li>
             <li>
                 <a href="#">Serviços</a>
-                <div class="dropdown-menu">
+                <div class="sub-menu">
                     <ul>
                         <li>
-                            <a href="#">SEO</a>
+                            <a href="#">Google play</a>
                         </li>
                         <li>
-                            <a href="#">Google ADS</a>
+                            <a href="#">Amazon</a>
                         </li>
                         <li>
-                            <a href="#">Social Media</a>
+                            <a href="#">Netflix</a>
                         </li>
                         <li>
-                            <a href="#">Criação de Sites</a>
+                            <a href="#">Youtube</a>
                         </li>
                         <li>
-                            <a href="#">Criação de Blog</a>
+                            <a href="#">Tiktok</a>
                         </li>
                     </ul>
                 </div>
-            </li>
-            <li>
-                <a href="#">Contacto</a>
-            </li>
-            <li>
-                <a href="#">Login</a>
             </li>
         </ul>
     </nav>
