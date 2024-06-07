@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/mobile-form.css">
+    <link rel="stylesheet" href="estilos/media-query-form.css">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <main>
+        <div class="conteiner">
+            <div id="form-img">
+                <img src="imagens/undraw_shopping_re_hdd9.svg" alt="">
+            </div>
+            <div id="form">
+                <form action="#" method="post" autocomplete="on">
+                    <div id="header-form">
+                        <h1>Cadastrar-se</h1>
+                        <button><a href="#">Login</a></button>
+                    </div>
+                    <div class="boxInput">
+                        <label for="firts-name">Primeiro nome</label>
+                        <input type="text" name="firts-name" id="firts-name" minlength="4" maxlength="8" autocomplete="name" required placeholder="Digite seu primeiro nome">
+                    </div>
+                    <div class="boxInput">
+                        <label for="last-name">Sobrenome</label>
+                        <input type="text" name="last-name" id="last-name" minlength="4" maxlength="8" autocomplete="name" required placeholder="Digite seu sobrenome">
+                    </div>
+                    <div class="boxInput">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" autocomplete="email" required placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="boxInput">
+                        <label for="senha">Senha</label>
+                        <input type="senha" name="senha" id="senha" minlength="4" maxlength="6" autocomplete="new-password" required placeholder="Digite sua senha">
+                    </div>
+                    <div class="boxInput">
+                        <label for="confirm-senha">Confimar senha</label>
+                        <input type="senha" name="confirm-senha" id="confirm-senha" minlength="4" maxlength="6"autocomplete="new-password" required placeholder="Digite sua senha novamente">
+                    </div>
+                    <div id="box-genero">
+                        <div id="genero-title">
+                            <h3>Genero</h3>
+                        </div>
+                        <div class="box-gener-grup">
+                            <input type="radio" name="genero" id="male">
+                            <label for="male">Mascúlino</label>
+                        </div>
+                        <div class="box-gener-grup">
+                            <input type="radio" name="genero" id="female">
+                            <label for="female">Femínino</label>
+                        </div>
+                        <div class="box-gener-grup">
+                            <input type="radio" name="genero" id="another">
+                            <label for="another">Another</label>
+                        </div>
+                    </div>
+                    <div id="box-button">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@media screen and (min-width:481px) and (max-width:768px) {
+    header .menu {
+        justify-content: space-around;
+    }
+
+    a {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    header .menu {
+        justify-content: space-around;
+    }
+
+    a {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px) {
+    header .menu {
+        justify-content: space-around;
+    }
+
+    a {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width:1201px)  {
+    header .menu {
+        justify-content: space-around;
+    }
+
+    a {
+        font-size: 1.3em;
+    }
+}
