@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+
+        @keyframes denimontanna {
+            0% {
+                background-color: blue;
+            }
+
+            25% {
+                background-color:  dodgerblue;
+            }
+
+            50% {
+                background-color:crimson;
+            }
+
+            75% {
+                background-color: orange;
+            }
+
+            100% {
+                background-color: orangered;
+            }
+            
+        }
+
+        @keyframes deniboy {
+            0% {
+                background-color: black;
+            }
+
+            25% {
+                background-color: sienna;
+            }
+
+            50% {
+                background-color: slateblue;
+            }
+
+            75% {
+                background-color: blueviolet;
+            }
+
+            100% {
+                background-color: teal;
+            }
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        div {
+            width: 150px;
+            height: 150px;
+            border-radius: 5%;
+            margin: 0px 5px;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        #first {
+            background-color: blue;
+            animation-name: denimontanna;
+       
+        }
+
+        #second {
+            background-color: black;
+            animation-name: deniboy;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="first">
+        
+    </div>
+    <div id="second">
+        
+    </div>
+    
+</body>
+</html>

@@ -1,127 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdow-menu</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
-            list-style-type: none;
-        }
-
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-        body {
-            height: 100vh;
-            width: 100vw;
-            background-image: url('imagens/espaco.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        nav {
-            background-color: #1e90ff;
-            padding: 10px;
-        }
-
-        nav ul {
-            display: inline-flex;
-            margin-left: 15px;
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-
-        nav ul li {
-            margin: 0px 45px;
-        }
-
-        nav  ul li a {
-            text-decoration: none;
-            color: #ffffff;
-        }
-
-        .sub-menu {
-            display: none;
-        }
-
-        nav li:hover .sub-menu {
-            display: block;
-            position: absolute;
-            background-color: #1e90ff;
-            border-radius: 0px 0px 10px 10px;
-        }
-
-        nav li:hover .sub-menu ul {
-            display: block;
-            padding: 10px;
-        }
-
-        nav li:hover .sub-menu li {
-            margin-top: 20px;
-            padding: 20px;
-            transition: .4s ease;
-            text-align: center;
-        }
-
-        .sub-menu li:hover {
-            border-radius: 10px;
-            background-color: rgb(23, 75, 126);
-        }
-
-    </style>
+    <link rel="stylesheet" href="estilos/mobile-first.css">
+    <link rel="stylesheet" href="estilos/another-media-query.css">
+    <title>dropdown-menu</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="#">Cursos</a>
-                <div class="sub-menu">
-                    <ul>
-                        <li>
-                            <a href="#">Linguagem C</a>
-                        </li>
-                        <li>
-                            <a href="#">C#</a>
-                        </li>
-                        <li>
-                            <a href="#">C++</a>
-                        </li>
-                        <li>
-                            <a href="#">Java</a>
-                        </li>
-                        <li>
-                            <a href="#">Python</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <a href="#">Serviços</a>
-                <div class="sub-menu">
-                    <ul>
-                        <li>
-                            <a href="#">Google play</a>
-                        </li>
-                        <li>
-                            <a href="#">Amazon</a>
-                        </li>
-                        <li>
-                            <a href="#">Netflix</a>
-                        </li>
-                        <li>
-                            <a href="#">Youtube</a>
-                        </li>
-                        <li>
-                            <a href="#">Tiktok</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#">SOBRE</a>
+                </li>
+                <li class="drop">
+                    <a href="#">SERVIÇOS</a>
+                    <div class="conteiner-sub">
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">SITE</a>
+                            </li>
+                            <li>
+                                <a href="#">MÍDIAS</a>
+                            </li>
+                            <li>
+                                <a href="#">ANÚNCIOS</a>
+                            </li>
+                            <li>
+                                <a href="#">SEO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="drop">
+                    <a href="#">PROJECTOS</a>
+                    <div class="conteiner-sub">
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">PORTÍFOLIO</a>
+                            </li>
+                            <li>
+                                <a href="#">LOGIN</a>
+                            </li>
+                            <li>
+                                <a href="#">ANDROID</a>
+                            </li>
+                            <li>
+                                <a href="#">INFORM</a>
+                            </li>
+                            <li>
+                                <a href="#">CORDEL</a>
+                            </li>
+                            <li>
+                                <a href="#">Z</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="drop">
+                    <a href="#">CONTACTO</a>
+                    <div class="conteiner-sub">
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">WATSSAP</a>
+                            </li>
+                            <li>
+                                <a href="#">INSTAGRAM</a>
+                            </li>
+                            <li>
+                                <a href="#">TWITTER X</a>
+                            </li>
+                            <li>
+                                <a href="#">LINKDIN</a>
+                            </li>
+                            <li>
+                                <a href="#">TIK TOK</a>
+                            </li>
+                            <li>
+                                <a href="#">TELEGRAM</a>
+                            </li>
+                            <li>
+                                <a href="#">FACEBOOK</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>

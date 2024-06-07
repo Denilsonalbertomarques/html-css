@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body, main {
+            width: 100vw;
+            height: 100vh;
+            background-color: #ffe4c4;
+            
+        }
+
+        .conteiner {
+            padding: 20px;
+            width: 400px;
+            background-color: #ff7f50;
+            height: 700px;
+            overflow: auto;
+            counter-reset: contador;
+        }
+
+        p {
+            margin: 10px 0px;
+            border: 2px solid white;
+            padding: 5px;
+            counter-increment: contador;
+            
+        }
+
+        input:checked ~ p::before {
+                content: '['counter(contador)']';
+                padding: 0px 5px;
+                color: #ffffff;
+            }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #808080;
+            
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #000000;
+            border-radius: 10px;
+            
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #dc143c;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="conteiner">
+            <input type="checkbox" name="a" id="a">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure reprehenderit et soluta modi. Quidem adipisci, facere magni neque beatae nemo quos deleniti perferendis facilis aut ut quo, quasi vero!</p>
+        </div>
+    </main>
+</body>
+</html>
