@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select exercício</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background-color: rgb(4, 19, 34);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box {
+            width: 300px;
+            height: 45px;
+            position: relative;
+        }
+
+        .box label {
+            pointer-events: none;
+            color: dodgerblue;
+            position: absolute;
+            top: -7px;
+            left: 18px;
+            transform: scale(0.9);
+            background-color: rgb(4, 19, 34);
+            padding: 0px 5px;
+        }
+        .box select {
+            width: 95%;
+            height: 100%;
+            padding: 0px 12px;
+            border: none;
+            outline: 3px solid dodgerblue;
+            margin: 2px;
+            border-radius: 15px;
+            background-color: transparent;
+            font-size: 1.2em;
+            color: white;
+            
+        }
+
+        .box select option {
+            background-color: rgb(4, 19, 34);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="br">Brasil</option>
+            <option value="pt">Portugal</option>
+            <option value="cz">Cazaquistão</option>
+            <option value="pq">Paquistão</option>
+            <option value="ksa">Arabia saudita</option>
+            <option value="fr">França</option>
+            <option value="it">Italia</option>
+            <option value="al">Alemanha</option>
+            <option value="pb">Países Baixos</option>
+            <option value="nz">Nova Zelândia</option>
+            <option value="au">Australia</option>
+            <option value="at">Aústria</option>
+            <option value="po">Polonia</option>
+            <option value="ur">Uruguai</option>
+        </select>
+    </div>
+</body>
+</html>

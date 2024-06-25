@@ -17,10 +17,14 @@ header .menu {
 
 
 header .menu li {
-    padding: 12px;
     margin: 5px 0px;
     transition: .4s ease-in-out;
     position: relative;
+}
+
+header .menu li a {
+    padding: 12px;
+    display: block;
 }
 
 header .menu li::after {
@@ -59,8 +63,8 @@ header .menu li:hover {
     display: block;
     position: absolute;
     background-color: #8e9092;
-    margin-top: 17px;
-    margin-left: -14px;
+    margin-top: 6px;
+    margin-left: -10px;
 }
 
 

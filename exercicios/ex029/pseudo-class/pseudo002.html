@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        div {
+            margin: 15px;
+            padding: 20px;
+        }
+        h2 {
+            margin: 15px 0px;
+        }
+
+        div:has(section) p {
+           background-color: #ccc;
+        }
+        :is(div) h2 {
+            background-color: crimson;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Mundo mudou</h2>
+        <section></section>
+        <article></article>
+        <table></table>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum incidunt dolorem modi ab dolorum recusandae similique. At temporibus soluta illum ab consequatur nemo adipisci, sed odit, delectus praesentium quasi laudantium?</p>
+    </div>
+</body>
+</html>

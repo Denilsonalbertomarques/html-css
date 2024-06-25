@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor has</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        p {
+            background-color: chocolate;
+            margin: 20px auto;
+        }
+        .container1, #container2 {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .container1:has(p) {
+            border: 2px solid black;
+        }
+        #container2:has(textarea) {
+            width: 270px;
+            height: 200px;
+            background-color: crimson;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+
+        #container3:has(p) h2 {
+            color: seagreen;
+            font-size: 2em;
+        }
+
+        #container4 .filho2 {
+            display: none;
+        }
+        #container4:has(option[value="ao"]:checked) .filho2 {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dicta illo pariatur doloribus necessitatibus, magni nam nemo incidunt ratione similique debitis voluptate quas ipsam! Explicabo natus fuga corporis maxime quam?</p>
+    </div>
+    <div class="container1">
+        <p></p>
+    </div>
+    <div id="container2">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <div id="container3">
+        <h2>Mundooo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, at voluptatibus? Natus eos reprehenderit at eaque nulla excepturi quidem, magnam architecto cumque consectetur cum tempore, provident, debitis repellat! Cum, harum.</p>
+    </div>
+    <div id="container4">
+        <label for="pais">Country</label>
+        <select name="pais" id="pais">
+            <option value="">Escolha</option>
+            <option value="br">Brasil</option>
+            <option value="ao">Angola</option>
+        </select>
+        <br><br>
+        <div class="filho2">
+        <textarea name="qa" id="qa"></textarea>
+    </div>
+</body>
+</html>

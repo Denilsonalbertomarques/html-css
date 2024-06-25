@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drop-menu</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            list-style-type: none;
+            text-decoration: none;
+            color: #fffffffd;
+            
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(1, 13, 24);
+        }
+
+        header {
+            width: 100%;
+        }
+
+        header nav #conteiner {
+            padding: 20px;
+        }
+
+        nav #menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        nav #menu a:not(.sub-menu li a) {
+            font-size: 1.4em;
+        }
+
+        a:not(.sub-menu a) {
+            position: relative;
+            width: 0px;
+            transition: 1s ease-in-out;
+        }
+
+        a:not(.sub-menu a)::after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 0%;
+            height: 2px;
+            background-color: dodgerblue;
+            border-radius: 5px;
+            transition: .5s ease-in-out;
+        }
+
+        a:not(.sub-menu a):hover::after,
+        a:not(.sub-menu a):active::after {
+            width: 70%;
+        }
+
+        .conteier-2 {
+            position: relative;
+        }
+
+        .sub-menu {
+            display: none;
+            position: absolute;
+            width: 300px;
+            height: 350px;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.554);
+            top: 60px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fffffffd;
+        }
+
+        .sub-menu a {
+            color: #000000;
+            font-size: 1em;
+            display: block;
+        }
+
+        .sub-menu a:hover {
+            color: slategray;
+        }
+
+        .sub-menu li {
+            margin: 2px 0px;
+            padding: 8px;
+        }
+
+        nav #menu .drop:hover .sub-menu,
+        nav #menu .drop:active .sub-menu {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="conteiner">
+                <ul id="menu">
+                    <li class="drop">
+                        <a href="#">Cursos</a>
+                        <div class="conteiner-2">
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">JavaScript</a>
+                                </li>
+                                <li>
+                                    <a href="#">HTML</a>
+                                </li>
+                                <li>
+                                    <a href="#">CSS</a>
+                                </li>
+                                <li>
+                                    <a href="#">SQL</a>
+                                </li>
+                                <li>
+                                    <a href="#">Java</a>
+                                </li>
+                                <li>
+                                    <a href="#">PHP</a>
+                                </li>
+                                <li>
+                                    <a href="#">Python</a>
+                                </li>
+                                <li>
+                                    <a href="#">Boostrap</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="drop">
+                        <a href="#">Serviços</a>
+                        <div class="conteiner-2">
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Hospedagem</a>
+                                </li>
+                                <li>
+                                    <a href="#">YouTube</a>
+                                </li>
+                                <li>
+                                    <a href="#">Telegram</a>
+                                </li>
+                                <li>
+                                    <a href="#">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="#">Whatssap</a>
+                                </li>
+                                <li>
+                                    <a href="#">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#">Linkd In</a>
+                                </li>
+                                <li>
+                                    <a href="#">Amazon Prime</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="drop">
+                        <a href="#">Projectos</a>
+                        <div class="conteiner-2">
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Portífolio</a>
+                                </li>
+                                <li>
+                                    <a href="#">Login</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cadastro</a>
+                                </li>
+                                <li>
+                                    <a href="#">Android</a>
+                                </li>
+                                <li>
+                                    <a href="#">Gallary</a>
+                                </li>
+                                <li>
+                                    <a href="#">Exposition Card</a>
+                                </li>
+                                <li>            
+                                    <a href="#">Restroot</a>
+                                </li>
+                                <li>
+                                    <a href="#">Loading</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

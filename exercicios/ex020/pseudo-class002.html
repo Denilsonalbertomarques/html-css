@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class has, is, where</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            padding: 1em;
+            margin: 5px 0px;
+        }
+        
+        div:has(.has)  {
+            background-color: #ccc;
+        }
+        div:has(.has) a {
+            color: red;
+        }
+        
+        :is(.is) a {
+            color: green;
+        }
+
+        :where(.where) a {
+            color: orange;
+        }
+
+        :root:has(div #tema:checked) {
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2>:has()</h2>
+        <section class="has">
+            <p>
+                Conheça o site <a href="#">Mengo</a>
+            </p>
+        </section>
+    </div>
+    <div>
+        <h2>:is()</h2>
+        <section class="is">
+            <p>
+                Conheça o site <a href="#">mengo</a>
+            </p>
+        </section>
+    </div>
+    <div>
+        <h2>:Where()</h2>
+        <section class="where">
+            <p>
+                Conheça o site <a href="#">mengo</a>
+            </p>
+        </section>
+    </div>
+    <div >
+        <input type="checkbox" name="tema" id="tema">
+        <label for="tema">dark modo/light modo</label>
+    </div>
+</body>
+</html>

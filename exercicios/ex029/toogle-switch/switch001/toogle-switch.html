@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toogle Switch</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(2, 34, 67);
+        }
+        .conteiner-switch {
+            width: 250px;
+            height: 300px;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.417);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        input {
+            display: none;
+        }
+
+        .switch {
+            position: relative;
+            height: 51px;
+            width: 100px;
+            background-color: #646464;
+            border-radius: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: all .3s ease-in-out;
+        }
+        .slider {
+            position: absolute;
+            background-color: #000;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            left: 4px;
+            transition: all .5s ease-in-out;
+        }
+
+        .conteiner-switch:has(#swt:checked) .switch {
+            background-color: #1c771c;
+        }
+        .conteiner-switch:has(#swt:checked) .switch .slider {
+            transform: translateX(47px);
+            background-color: #ffffff;
+        }
+        .conteiner-switch:has(#swt) .slider::after {
+            position: absolute;
+            content: "OFF";
+            color: #ffffff;
+            left: 4px;
+            top: 8px;
+            font-size: 20px;
+        }
+        .conteiner-switch:has(#swt:checked) .switch .slider::after {
+            position: absolute;
+            content: "ON";
+            color: #000;
+            left: 7px;
+            top: 8px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner-switch">
+        <input type="checkbox" id="swt">
+        <label for="swt" class="switch">
+            <span class="slider"></span>
+        </label>
+    </div>
+</body>
+</html>

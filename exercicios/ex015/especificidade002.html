@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidade</title>
+    <style>
+        span {
+            display: block;
+            margin: 10px 25px;
+            padding: 5px;
+            border: 1px solid blue;
+            text-align: center;
+            background-color: rgb(112, 53, 26);
+            color: gainsboro;
+        }
+        
+        div > span {
+            border: 4px solid darkgreen;
+        }
+
+        #none {
+            border-color: black;
+        }
+
+        div > #none {
+            border-color: red;
+        }
+
+        .ad {
+            border-color: plum;
+        }
+
+        #first, #fit {
+            border-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <span id="none">1</span>
+        <span class="ad" id="first">2</span>
+        <span class="ad" id="fit">3</span>
+    </div>
+    
+    <div>
+        <span>5</span>
+        <span>6</span>
+    </div>
+    <span>7</span>
+    <span>8</span>
+</body>
+</html>

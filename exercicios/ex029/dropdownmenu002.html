@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown-menu</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            list-style-type: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #006400;
+            
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 24px;
+            width: 100%;
+        }
+
+        nav #menu1 {
+            display: flex;
+            justify-content: space-around;
+            overflow: auto;
+            
+        }
+
+        nav #menu2 {
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.2em;
+            font-weight: lighter;
+        }
+
+        .conteiner {
+            position: relative;
+        }
+
+        .menu3 {
+            display: none;
+            position: absolute;
+            width: 120px;
+            margin-top: 10px;
+            text-align: center;
+            background-color: #072107;
+            
+        }
+
+        .menu3 li {
+            width: 100%;
+            margin: 20px 0px;
+            transition: .6s ease-in-out;
+            position: relative;
+        }
+
+        .menu3 li a {
+            padding: 10px 0px;
+            display: block;
+        }
+
+        .menu3 li:not(.menu3 .nao)::after {
+            content: '';
+            position: absolute;
+            bottom: -13px;
+            left: 0px;
+            width: 100%;
+            height: 1px;
+            background-color: #d2d0d0;
+        }
+
+        #menu .drop {
+            transition: all .6s ease-in-out;
+        }
+
+        #menu2 .drop:hover .menu3 {
+            display: block;
+        }
+
+        .menu3 li:hover a {
+            
+            color: #a4a2a2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="conteiner1">
+                <ul id="menu1">
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Ao vivo</a></li>
+                    <li><a href="#">Grátis</a></li>
+                    <li><a href="#">Casino</a></li>
+                    <li><a href="#">Aviator</a></li>
+                    <li><a href="#">Promoções</a></li>
+                </ul>
+            </div>
+            <div id="conteiner2">
+                <ul id="menu2">
+                    <li class="drop">
+                        <a href="#">Notificações</a>
+                        <div class="conteiner3">
+                            <ul class="menu3">
+                                <li>
+                                    <a href="#">X</a>
+                                </li>
+                                <li>
+                                    <a href="#">X</a>
+                                </li>
+                                <li>
+                                    <a href="#">X</a>
+                                </li>
+                                <li class="nao">
+                                    <a href="#">X</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="drop">
+                        <a href="#">Mensagens</a>
+                        <div class="conteiner3">
+                            <ul class="menu3">
+                                <li>
+                                    <a href="#">Diogo</a>
+                                </li>
+                                <li>
+                                    <a href="#">Deise</a>
+                                </li>
+                                <li>
+                                    <a href="#">Denise</a>
+                                </li>
+                                <li class="nao">
+                                    <a href="#">Carlos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="drop">
+                        <a href="#">Perfil</a>
+                        <div class="conteiner3">
+                            <ul class="menu3">
+                                <li>
+                                    <a href="#">Mengo</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marcus</a>
+                                </li>
+                                <li>
+                                    <a href="#">Aleksander</a>
+                                </li>
+                                <li class="nao">
+                                    <a href="#">Cristian</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

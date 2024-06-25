@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+    
+        body {
+            background-color: #2e8b57;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #conteiner {
+            perspective: 600px;
+            background-color: #000000;
+            height: 300px;
+            width: 300px;
+            position: relative;
+        }
+
+        #first, #second {
+            background-color: #8b4513;
+            width: 148px;
+            height:100%;
+            position: absolute;
+            transition: .7s ease-in-out;
+            
+        }
+
+        #first {
+            left: 0px;
+            transform-origin: left;
+        }
+
+        #first:hover {
+            transform: rotateY(-90deg);
+            
+        }
+
+        #second {
+            right: 0px;
+            transform-origin: right;
+        }
+
+        #second:hover {
+            transform: rotateY(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div id="first"></div>
+        <div id="second"></div>
+    </div>
+</body>
+</html>
