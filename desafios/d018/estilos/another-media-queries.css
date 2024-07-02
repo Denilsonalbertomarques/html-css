@@ -1,0 +1,43 @@
+@media screen and (min-width:481px) and (max-width:768px) {
+
+    section .box {
+        width: 200px;
+        height: 300px;
+    }
+
+    section .box .article-img {
+        width: 200px;
+        height: 150px;
+    }
+
+    section .box .article-description h3 {
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    #plantel {
+        padding-left: 0px;
+        gap: 20px;
+    }
+
+    #plantel .box {
+        width: 250px;
+        height: 350px;
+        box-shadow: 6px 6px 12px #0005;
+    }
+
+    #plantel .box .article-img {
+        width: 250px;
+        height: 175px;
+    }
+
+    #plantel .box .article-description h3 {
+        font-size: 1.3rem;
+    }
+    #plantel .box .article-description span {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade all css</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div {
+            margin: 10px 0px;
+        }
+        .container {
+            background-color: #009900;
+            border: 2px solid #cc0;            
+            padding: 20px;
+            color: #ac01b5;
+        }
+        .child {
+            all: inherit;
+        }
+        .another {
+            color: #102060;
+            padding: 10px;
+            background-color: #999;
+            border: 2px solid #bbc015;
+            all: initial;
+        }
+
+        .container2 {
+            background-color: crimson;
+            color: #ccc000;
+            padding: 10px;
+            border: 2px solid skyblue;
+        }
+        .child2 {
+            all: initial;
+        }
+
+    </style>
+</head>
+<body>
+    <p>A propriedade <strong>all</strong> do css é utilizada para resetar os valores de todas as propriedades que um seletor recebe.
+        <pre>
+            <p>
+                Exemplo: &lt;div class="child"&gt;
+                
+                .child {
+
+                    background-color:black;
+                    border:3px solid white;
+                    color:white;
+                    all: initial;
+                } 
+            </p>
+        </pre>
+        Isso significa que a <strong>tag</strong> que tem a class child não terá nenhuma das propriedades que foi definida.
+    </p>
+    <p>
+        a propriedade <strong>all</strong> também pode ser utilizada para que um elemento filho herde todos os valores de seu elemento pai. E também para resetar todos os valores que o elemento filho recebeu de seu pai.
+        <pre>
+            <p>
+                Exemplo: &lt;div class="container"&gt;
+
+                    &lt;div class="filho"&gt;&lt;/div&gt;
+
+                &lt;/div&gt;
+
+                    .container {
+                        background-color:black;
+                        border:3px solid white;
+                        color:white;
+                        padding:20px;
+                    }
+                    .filho {
+                        all:inherit;
+                    }
+            </p>
+        </pre>
+        Isso significa que o elemnto que tem a class filho herdará todas os valores do elemento que tem a class container, por ser seu pai
+    </p>
+    <p>
+        OBS: por padrão os filhos herdam de seu pai algumas propriedades como: <strong>color</strong> e <strong>font-size</strong> podemos alterar isso utilizando a propriedade <strong>all</strong>, ou podemos alterar, outros valores para <strong>color</strong> e <strong>font-size</strong>
+    </p>
+    <div class="container">
+        <div class="child">
+            Mengoooooooooo
+        </div>
+    </div>
+    <div class="another">
+        Anotherrrrrrrrr
+    </div>
+    <div class="container2">
+       <div class="child2">
+        backstageeeeeeeeeeeee
+       </div>
+    </div>
+</body>
+</html>

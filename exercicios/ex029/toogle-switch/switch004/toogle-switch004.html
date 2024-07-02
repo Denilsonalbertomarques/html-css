@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toogle-switch</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body, main {
+            height: 100vh;
+            background-color: #fff;
+        }
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .2s linear;
+        }
+
+        input[type="checkbox"] {
+            position: relative;
+            appearance: none;
+            background-color: #999;
+            width: 35px;
+            height: 10px;
+            border-radius: 5px;
+            border: 2px solid #999;
+            transition: .5s ease;
+            cursor: pointer;
+            
+        }
+        input[type="checkbox"]::before {
+            position: absolute;
+            content: "";
+            width: 20px;
+            border-radius: 50%;
+            height: 20px;
+            background-color: #fff;
+            border: 2px solid #999;
+            top: -7px;
+            left: -3px;
+            transition: .3s ease;
+
+            box-sizing: border-box;
+        }
+        input[type="checkbox"]:checked {
+            background-color: #0080ff;
+            border-color: #0080ff;
+        }
+        input[type="checkbox"]:checked::before {
+            transform: translateX(17px);
+            border-color: #0080ff;
+            background-color: #fff;
+        }
+        body:has(input[type="checkbox"]:checked) main {
+            background-color: #030405;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <input type="checkbox" name="escolha" id="escolha">
+    </main>
+</body>
+</html>
