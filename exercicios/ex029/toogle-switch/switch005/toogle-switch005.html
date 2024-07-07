@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toogle-switch</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body, main {
+            height: 100vh;
+            width: 100vw; 
+            background-color: #063034;
+        }
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #container {
+            position: relative;
+            background-color: #999;
+            width: 120px;
+            height: 60px;
+            border-radius: 130px;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: .4s ease-in-out;
+        }
+
+        #container::before {
+            position: absolute;
+            content: 'OFF';
+            left: 8px;
+            top: 20px;
+            font-size: 1.1rem;
+            color: #5e5858;
+            opacity: 0;
+            transition: .3s ease-in-out;
+        }
+
+        #container:has(input[type="checkbox"]:checked)::before {
+            opacity: 1;
+        }
+
+        #container::after {
+            position: absolute;
+            content: 'ON';
+            right: 13px;
+            top: 20px;
+            font-size: 1.1rem;
+            color: #ccc;
+            opacity: 1;
+            transition: .3s ease-in-out;
+        }
+
+        #container:has(input[type="checkbox"]:checked)::after {
+            opacity: 0;
+            
+        }
+
+        #container input[type="checkbox"] {
+            appearance: none;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #6a6969;
+            border-radius: 50%;
+            left: 5px;
+            top: 5px;
+            transition: .4s ease-in-out;
+        } 
+
+        #container input[type="checkbox"]:checked {
+            transform: translateX(60px);
+            background-color: #0080ff;
+        }
+
+        #container:has(input[type="checkbox"]:checked) {
+            background-color: #69aaea;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <label id="container">
+            <input type="checkbox">
+        </label>
+    </main>
+</body>
+</html>

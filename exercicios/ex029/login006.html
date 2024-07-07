@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com modo light e dark</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: #ccc;
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box-form {
+            width: 280px;
+            background-color: #fff;
+            padding: 12px;
+            border-radius: 4px;
+            transition: .3s ease-in-out;
+        }
+        .box-form .form-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .box-form .form-title h2 {
+            font-size: 1.8rem;
+        }
+
+        .form-title #sw {
+            appearance: none;
+            position: relative;
+            width: 40px;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 20px;
+            transition: .4s ease-in-out;
+        }
+        #sw::before {
+            position: absolute;
+            content: '';
+            width: 15px;
+            top: 3px;
+            left: 3px;
+            height: 15px;
+            background-color: #666;
+            border-radius: 50%;
+            transition: .4s ease-in-out;
+        }
+        #sw:checked {
+            background-color: #6aa6e2;
+        }
+        #sw:checked::before {
+            background-color: #004f9f;
+            transform: translateX(19px);
+        }
+
+        .boxInput {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 30px 0px;
+            padding: 4px 0px;
+        }
+
+        .boxInput label {
+            font-size: 1.1rem;
+            transition: .6s ease-in-out;
+        }
+
+        .boxInput input {
+            width: 100%;
+            height: 100%;
+            padding: 10px 10px 10px 13px;
+            border: none;
+            outline: 2px solid #000000;
+            border-radius: 25px;
+            font-size: 1rem;
+            margin: 4px 0px;
+            transition: .6s ease-in-out;
+        }
+
+        .box-button {
+            position: relative;
+            width: 100%;
+        }
+        .box-button button {
+            width: 100%;
+            padding: 13px;
+            border-radius: 25px;
+            border: none;
+            outline: 1px solid #000000;
+            margin-top: 16px;
+            margin-bottom: 5px;
+            font-size: 1rem;
+            transition: .4s ease-in-out;
+        }
+        .box-button button:hover {
+            background-color: #ccc;
+        }
+
+
+        .box-form:has(#sw:checked)  {
+            background-color: #020f1d;
+            color: #0f85fa;
+        }
+
+        main:has(#sw:checked) {
+            background-color: #666;
+        }
+
+        .box-form:has(#sw:checked) .boxInput label {
+            position: absolute;
+            top: -5px;
+            left: 5px;
+            transform: scale(0.8);
+            background-color: #020f1d;
+            padding: 0px 5px;
+        }
+        .box-form:has(#sw:checked) .boxInput input {
+            background-color: transparent;
+            outline-color: #0f85fa;
+            color: #fff;
+            padding-left: 20px;
+        }
+
+        .box-form:has(#sw:checked) .box-button button {
+            margin-top: 5px;
+            outline-color: #0f85fa;
+            background-color: transparent;
+            color: #0f85fa;
+            font-size: 1.2rem;
+        }
+        .box-form:has(#sw:checked) .box-button button:hover {
+            background-color: #022141;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="box-form">
+                <form action="login.php" method="post" autocomplete="off">
+                    <div class="form-title">
+                        <h2>Login</h2>
+                        <input type="checkbox" name="sw" id="sw">
+                    </div>
+                    <div class="boxInput">
+                        <label for="email">Enter your email address</label>
+                        <input type="email" name="email" id="email" required autocomplete="off">
+                    </div>
+                    <div class="boxInput">
+                        <label for="password">Enter your password</label>
+                        <input type="password" name="password" id="password" minlength="4" maxlength="10" required autocomplete="off">
+                    </div>
+                    <div class="box-button">
+                        <button type="submit">Enter</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
