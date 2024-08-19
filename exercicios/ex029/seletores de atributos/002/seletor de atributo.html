@@ -18,7 +18,22 @@
         }
 
         [href^="www"] {
-            color: crimson;
+            color: #dc143c;
+        }
+        [meu-atributo~="mengo"] {
+            margin: 10px 0px;
+            padding: 12px;
+        }
+        [meu-atributo|="mengo-01"] {
+            margin: 10px 0px;
+            font-size: 1.2rem;
+            padding: 10px;
+        }
+        [meu-atributo$="s"] {
+            margin: 10px 0px;
+            font-size: 1.2rem;
+            padding: 15px;
+            color: #1607c8;
         }
     </style>
 </head>
@@ -26,5 +41,11 @@
     <a href="www.google.com">google</a>
     <a href="www.youtube.com">youtube</a>
     <a href="estudonauta.com">Estudonauta</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quisquam esse enim impedit amet fugiat ipsam veritatis iure ipsum molestiae libero, perferendis maxime debitis laudantium praesentium aliquam molestias necessitatibus distinctio?</p>
+    <p meu-atributo="mengo-01">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quisquam esse enim impedit amet fugiat ipsam veritatis iure ipsum molestiae libero, perferendis maxime debitis laudantium praesentium aliquam molestias necessitatibus distinctio?</p>
+    <p meu-atributo="deniboy mengo montanna">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quisquam esse enim impedit amet fugiat ipsam veritatis iure ipsum molestiae libero, perferendis maxime debitis laudantium praesentium aliquam molestias necessitatibus distinctio?</p>
+    <p meu-atributo="dias">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere numquam fugiat iure recusandae laborum fugit vero. Reprehenderit a quisquam qui odio sunt totam praesentium numquam reiciendis dolorum, voluptatem nobis illum?</p>
+    <p meu-atributo="meses">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere numquam fugiat iure recusandae laborum fugit vero. Reprehenderit a quisquam qui odio sunt totam praesentium numquam reiciendis dolorum, voluptatem nobis illum?</p>
+    <p meu-atributo="anos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere numquam fugiat iure recusandae laborum fugit vero. Reprehenderit a quisquam qui odio sunt totam praesentium numquam reiciendis dolorum, voluptatem nobis illum?</p>
 </body>
 </html>
