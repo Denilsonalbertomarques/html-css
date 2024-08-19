@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de atributos</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px;
+        }
+       
+        a:visited {
+            color: #008000;
+        }
+        div {
+            min-height: 100vh;
+            padding: 20px;
+        }
+        #one {
+            background-color: #9acd32;
+        }
+        #two {
+            background-color: #800080;
+        }
+        #three {
+            background-color: #1e90ff;
+        }
+        #for {
+            background-color: #01101f;
+        }
+        [meu-atributo] {
+            font-size: 1.4rem;
+        }
+    </style>
+</head>
+<body>
+    <a href="#one">One</a>
+    <a href="#two">Two</a>
+    <a href="#three">Three</a>
+    <a href="#for">For</a>
+    <div id="one">
+        <p meu-atributo>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quas explicabo mollitia ex voluptatum ipsum, minus eum excepturi quis, cupiditate vel accusantium dolore? Quisquam molestiae perspiciatis illo cumque cupiditate dicta?</p>
+    </div>
+    <div id="two">
+        <p meu-atributo>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quas explicabo mollitia ex voluptatum ipsum, minus eum excepturi quis, cupiditate vel accusantium dolore? Quisquam molestiae perspiciatis illo cumque cupiditate dicta?</p>
+    </div>
+    <div id="three">
+        <p meu-atributo>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quas explicabo mollitia ex voluptatum ipsum, minus eum excepturi quis, cupiditate vel accusantium dolore? Quisquam molestiae perspiciatis illo cumque cupiditate dicta?</p>
+    </div>
+    <div id="for">
+        <p meu-atributo>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quas explicabo mollitia ex voluptatum ipsum, minus eum excepturi quis, cupiditate vel accusantium dolore? Quisquam molestiae perspiciatis illo cumque cupiditate dicta?</p>
+    </div>
+</body>
+</html>

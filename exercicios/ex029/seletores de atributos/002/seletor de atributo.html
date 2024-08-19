@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de atributo</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            display: block;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+
+        [href^="www"] {
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <a href="www.google.com">google</a>
+    <a href="www.youtube.com">youtube</a>
+    <a href="estudonauta.com">Estudonauta</a>
+</body>
+</html>
