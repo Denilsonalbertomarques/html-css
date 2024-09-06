@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de atributo + pseudo-class is</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        #sessao {
+            display: flex;
+        }
+        :is(#sessao) div[meu-atributo$="s"] {
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            border-radius: 15px;
+            margin: 12px;
+            transition-duration: 1s;
+            
+        }
+        :is(#sessao) div[meu-atributo*="e"] {
+            background-color: #008000;
+            transition-duration: 1s;
+
+        }
+        :is(#sessao) div[meu-atributo*="e"]:hover {
+            transform: scale(1.2);
+            background-color: #1e90ff;
+        }
+        #sessao:has(div[meu-atributo*="e"]:hover) div[meu-atributo^="d"] {
+            background-color: #ff1493;
+            filter: blur(4px);
+        }
+
+        :is(#sessao) div[meu-atributo^="d"]:hover {
+            transform: scale(1.2);
+        }
+        #sessao:has(div[meu-atributo^="d"]:hover) div[meu-atributo*="e"] {
+            filter: grayscale(100%);
+        }
+    </style>
+<body>
+    <section id="sessao">
+        <div meu-atributo="dias"></div>
+        <div meu-atributo="meses"></div>
+    </section>
+</body>
+</html>

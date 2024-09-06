@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        @keyframes anime {
+            from {
+                transform: translateX(0px);
+                background-color: crimson;
+            }
+            to {
+                transform: translateX(350px);
+                background-color  : dodgerblue;
+            }
+        }
+        div {
+            width: 150px;
+            height: 100px;
+            background-color: black;
+
+            animation: anime 2s ease-in-out 5s infinite alternate backwards;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
