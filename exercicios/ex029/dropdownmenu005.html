@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdownmenu</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            list-style-type: none;
+        }
+        body {
+            background-color: #00060c;
+        }
+        a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        
+        #container {
+            padding: 50px 18px;
+        }
+        #menu {
+            display: flex;
+            
+        }
+        #menu li[meu-atributo^="d"] {
+            padding: 0px 12px;
+        }
+        .menu_2 {
+            display: none;
+            position: relative;
+            background-color: #fff;
+            width: 170px;
+            border-radius: 5px;
+            margin: 5px;
+            overflow: hidden;
+        }
+        #menu li[meu-atributo^="d"]:hover .menu_2 {
+            display: block;
+            position: absolute;
+            margin-left: -23px;
+            margin-top: 3px;
+        }
+        #menu li[meu-atributo^="d"] .menu_2 li a {
+            color: #000;
+        }
+        .menu_2 li a {
+            padding: 10px;
+            margin: 10px 0px 5px 0px;
+        }
+
+        .menu_2 li:hover a {
+            background-color: #bdbcbc;
+        }
+        .menu_2 .underline {
+            position: relative;
+        }
+        .menu_2 .underline::before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background-color: #0003;
+
+            bottom: -7px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="container">
+            <ul id="menu">
+                <li meu-atributo="drop">
+                    <a href="#">Go</a>
+                    <div class="container-menu_2">
+                        <ul class="menu_2">
+                            <li><a href="#">Home</a></li>
+                            <li class="underline"><a href="#">Pages</a></li>
+                            <li><a href="#">Chat</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Watch</a></li>
+                            <li class="underline"><a href="#">Notifications</a></li>
+                            <li><a href="#">Settings</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li meu-atributo="drop">
+                    <a href="#">Account</a>
+                    <div class="container-menu_2">
+                        <ul class="menu_2">
+                            <li><a href="#">Ricardo_01</a></li>
+                            <li><a href="#">Caio_18</a></li>
+                            <li><a href="#">João Pedro</a></li>
+                            <li><a href="#">Pedro Ribeiro</a></li>
+                            <li><a href="#">Diogo Ribas</a></li>
+                            <li><a href="#">Carlos_Augusto</a></li>
+                            <li><a href="#">Miranda_Fragoso</a></li>
+                            <li><a href="#">Deni_Montanna</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li meu-atributo="drop">
+                    <a href="#">About</a>
+                    <div class="container-menu_2">
+                        <ul class="menu_2">
+                            <li><a href="#">Company</a></li>
+                            <li class="underline"><a href="#">Enterprise</a></li>
+                            <li><a href="#">Deals</a></li>
+                            <li><a href="#">Wallet</a></li>
+                            <li class="underline"><a href="#">Pay</a></li>
+                            <li><a href="#">Comentary</a></li>
+                            <li><a href="#">Suggestions</a></li>
+                            <li><a href="#">Report Problems</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
