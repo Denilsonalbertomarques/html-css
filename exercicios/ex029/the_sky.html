@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmus</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            background-color: #030405;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div.cosmus {
+            position: relative;
+            width: 40rem;
+            height: 40rem;
+            display: flex;
+            perspective: 60rem;
+        }
+        div.cosmus > div.stars {
+            width: 0.1rem;
+            height: 0.5rem;
+            background-color: #fff;
+            box-shadow: 0rem 0rem 2rem #ccc, 0rem 0rem 5rem #cccc, 0rem 0rem 8rem #ccc;
+            position: absolute;
+        }
+        div.stars:nth-of-type(1) {
+            right: 20rem;
+        }
+        div.stars:nth-of-type(2) {
+            right: 5rem;
+            top: 8rem;
+        }
+        div.stars:nth-of-type(3) {
+            right: 15rem;
+            top: 5rem;
+        }
+        div.stars:nth-of-type(4) {
+            right: 9rem;
+            top: 2rem;
+        }
+        div.stars:nth-of-type(5) {
+            right: 2rem;
+            top: 1rem;
+        }
+        div.stars:nth-of-type(6) {
+            left: 2rem;
+            top: 1rem;
+        }
+        div.stars:nth-of-type(7) {
+            left: 9rem;
+            top: 2rem;
+        }
+        div.stars:nth-of-type(8) {
+            left: 15rem;
+            top: 5rem;
+        }
+        div.stars:nth-of-type(9) {
+            left: 20rem;
+            top: 6rem;
+        }
+        div.stars:nth-of-type(10) {
+            left: 4rem;
+            top: 7rem;
+        }
+        div.cosmus > div.moon {
+            width: 20rem;
+            height: 20rem;
+            background-image: linear-gradient(to right,#778899, transparent 40%);
+            border-radius: 50%;
+            
+            position: absolute;
+            
+            bottom: 18%;
+            left: 20%;
+        }
+        div.cosmus > div.stars::after, div.stars::before {
+            content: "";
+            position: absolute;
+            height: 0.1rem;
+            width: 0.3rem;
+            background-color: #fff;
+            bottom: 0.2rem;
+
+            box-shadow: 0rem 0rem 2rem #ccc, 0rem 0rem 5rem #ccc, 0rem 0rem 7rem #ccc;
+            
+        }
+        div.cosmus > div.stars::before {
+            left: 0rem;
+            
+        }
+        div.cosmus > div.stars::after {
+            right: 0rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="cosmus">
+        <div class="stars"></div>
+        <div class="stars"></div>
+        <div class="stars"></div>
+        <div class="stars"></div>
+        <div class="stars"></div>
+        <div class="stars"></div>
+        <div class="stars"></div>
+        <div class="stars"></div>
+        <div class="stars"></div>
+        <div class="stars"></div>
+        <div class="moon"></div>
+    </div>
+</body>
+</html>

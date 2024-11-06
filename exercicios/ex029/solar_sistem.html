@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema solar</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        @keyframes solarAnime {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(7.5rem);
+            }
+        }
+        body {
+            background-color: #030405;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        div.solar_system {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40rem;
+            height: 40rem;
+            
+            perspective: 70rem;
+        }
+        div.solar_system > div.sun {
+            width: 20rem;
+            height: 20rem;
+            position: absolute;
+            border-radius: 50%;
+            background-image: linear-gradient(to right, #ffff00,  #ffa500 35%);
+            box-shadow: 0rem 0rem 2rem #ffa500, 0rem 0rem 4rem #ff4500, 0rem 0rem 5rem #ff4500;
+            
+            left: 0.9rem;
+            top: 12rem;
+            z-index: 1;
+
+            animation: solarAnime ease-in-out 11s 0s infinite alternate;
+            
+        }
+        div.solar_system > div.sun:hover {
+            animation-play-state: paused;
+        }
+        div.solar_system > div.moon {
+            width: 20rem;
+            height: 20rem;
+            background-color: #778899;
+            border-radius: 50%;
+            position: relative;
+            
+            box-shadow: 0rem 0rem 0.12rem #ccc, 0rem 0rem 2rem #cccc, 0rem 0rem 3rem #ccc;
+        }
+        div.solar_system > div.moon > div.moon_elements {
+            width: 1rem;
+            height: 1rem;
+            background-color: transparent;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 0rem 0rem 2rem #000;            
+            
+        }
+        div.moon_elements:nth-of-type(1) {
+            top: 9rem;
+            right: 9rem;
+        }
+        div.moon_elements:nth-of-type(2) {
+            top: 6rem;
+            left: 3rem;
+        }
+        div.moon_elements:nth-of-type(3) {
+            top: 3rem;
+            right: 5rem;
+        }
+        div.moon_elements:nth-of-type(4) {
+            bottom: 3rem;
+            left: 5rem;
+        }
+        div.moon_elements:nth-of-type(5) {
+            bottom: 7rem;
+            left: 5rem;
+        }
+        div.moon_elements:nth-of-type(6) {
+            top: 8rem;
+            right: 3rem;
+        }
+        div.moon_elements:nth-of-type(7) {
+            bottom: 6rem;
+            right: 6rem;
+        }
+        div.moon_elements:nth-of-type(8) {
+            top: 4rem;
+            left: 8rem;
+        }
+        div.moon_elements:nth-of-type(9) {
+            bottom: 2rem;
+            left: 9rem;
+        }
+        div.solar_system > div.satelity {
+            position: absolute;
+            width: 0.2rem;
+            height: 0.2rem;
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 0rem 0rem 4rem #fff, 0rem 0rem 7rem #cccc, 0rem 0rem 9rem #fff;
+
+        }
+        div.satelity:nth-child(odd) {
+            top: 2rem;
+            right: 7rem;
+        }
+        div.satelity:nth-child(even) {
+            bottom: 1rem;
+            left: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="solar_system">
+        <div class="sun"></div>
+        <div class="moon">
+            <div class="moon_elements"></div>
+            <div class="moon_elements"></div>
+            <div class="moon_elements"></div>
+            <div class="moon_elements"></div>
+            <div class="moon_elements"></div>
+            <div class="moon_elements"></div>
+            <div class="moon_elements"></div>
+            <div class="moon_elements"></div>
+            <div class="moon_elements"></div>
+        </div>
+        <div class="satelity"></div>
+        <div class="satelity"></div>
+    </div>
+</body>
+</html>
