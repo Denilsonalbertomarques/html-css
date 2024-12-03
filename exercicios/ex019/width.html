@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade width CSS3</title>
+    <style>
+        body {margin: 20px; padding: 0px;}
+        div.container {
+            width: 100vw;
+            height: 100vh;
+        }
+        div.container > div {
+            border: 2px solid #000;
+            margin-bottom: 15px;
+        }
+        div.container > div.largura-auto {
+            width: auto;
+            border-color: #00d;
+            
+        }
+        div.container > div.largura-vwvh {
+            border-color: #008d44;
+            width: 50vw;
+        }
+        div.container > div.largura-porcent {
+            border-color: #eb6767;
+            width: 50%;
+        }
+        div.container > div.largura-pixel {
+            border-color: #c82;
+            width: 350px;
+        }
+        div.container > div.largura-fit {
+            border-color: #c2f;
+            width: fit-content;
+        }
+        div.container > div.largura-max {
+            border-color: #d76b12;
+            width: max-content;
+        }
+        div.container > div.largura-min {
+            border-color: #2ac;
+            width: min-content;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="largura-auto"></div>
+        <div class="largura-vwvh">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque magnam dolore ullam, facilis incidunt excepturi cupiditate esse repudiandae obcaecati earum repellendus eos odit rem eaque minima dolorem. Et, reiciendis repudiandae!</div>
+        <div class="largura-porcent">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque magnam dolore ullam, facilis incidunt excepturi cupiditate esse repudiandae obcaecati earum repellendus eos odit rem eaque minima dolorem. Et, reiciendis repudiandae!</div>
+        <div class="largura-pixel">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="largura-fit">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. At sequi saepe laboriosam officia vero accusamus nihil delectus illo magnam. Aspernatur cupiditate deserunt iusto vel consequuntur eius molestiae adipisci laudantium optio.</div>
+        <div class="largura-max">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi expedita cum, velit modi ipsam labore est adipisci, necessitatibus voluptates repellendus laudantium iusto eius asperiores soluta perspiciatis aperiam! Nesciunt, perspiciatis recusandae.</div>
+        <div class="largura-min">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet  adipisicing elit. Totam minus facere, vero similique laudantium optio dolor  vitae sed officiis itaque   enim quos maxime nisi? Nulla, quas quia!</div>
+    </div>
+</body>
+</html>

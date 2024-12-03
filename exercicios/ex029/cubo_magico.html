@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cubo_magico3d</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #030405;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            perspective: 900px;
+        }
+        div.cubo_magico {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            transform: rotate3d(1, 1, 1, -45deg);
+            transform-style: preserve-3d;
+
+            animation: Animar 7s linear 0s infinite alternate;
+        }
+        div.cubo_magico >  div {
+            position: absolute;
+            width: calc(150px / 3);
+            height: calc(150px / 3);
+            border: 2px solid #ccc;
+        }
+        div.cubo_magico > div.cb1 {
+            background-color: #ff0000;
+            transform: rotateY(90deg) translateZ(-25px) translateX(100px);
+        }
+        div.cubo_magico > div.cb2 {
+            background-color: #ff0;
+            left: 50px;
+            transform: rotateY(90deg) translateZ(-75px) translateX(50px);
+        }
+        div.cubo_magico > div.cb3 {
+            background-color: #ffa500;
+            right: 0px;
+            transform: rotateY(90deg) translateZ(-125px);
+        }
+        div.cubo_magico > div.cb4 {
+            background-color: #ff4500;
+            top: 50px;
+            transform: rotateY(90deg) translateZ(-25px) translateX(100px);
+        }
+        div.cubo_magico > div.cb5 {
+            background-color: #00ff;
+            left: 50px;
+            top: 50px;
+            transform: rotateY(90deg) translateZ(-75px) translateX(50px);
+        }
+        div.cubo_magico > div.cb6 {
+            background-color: #0f0;
+            right: 0px;
+            top: 50px;
+            transform: rotateY(90deg) translateZ(-125px);
+        }
+        div.cubo_magico > div.cb7 {
+            background-color: #8a2be2;
+            top: 100px;
+            transform: rotateY(90deg) translateZ(-25px) translateX(100px);
+        }
+        div.cubo_magico > div.cb8 {
+            background-color: #8ad;
+            top: 100px;
+            left: 50px;
+            transform: rotateY(90deg) translateZ(-75px) translateX(50px);
+        }
+        div.cubo_magico > div.cb9 {
+            background-color: #2dc;
+            top: 100px;
+            right: 0px;
+            transform: rotateY(90deg) translateZ(-125px);
+        }
+        div.cubo_magico > div.cb10 {
+            background-color: #b8860b;
+            transform: rotateY(90deg) translateZ(125px) translateX(100px);
+        }
+        div.cubo_magico > div.cb11 {
+            background-color: #315;
+            left: 50px;
+            transform: rotateY(90deg) translateZ(75px) translateX(50px);
+        }
+        div.cubo_magico > div.cb12 {
+            background-color: #1e90ff;
+            right: 0px;
+            transform: rotateY(90deg) translateZ(25px);
+        }
+        div.cubo_magico > div.cb13 {
+            background-color: #7cb;
+            top: 50px;
+            transform: rotateY(90deg) translateZ(125px) translateX(100px);
+        }
+        div.cubo_magico > div.cb14 {
+            background-color: #aa8;
+            left: 50px;
+            top: 50px;
+            transform: rotateY(90deg) translateZ(75px) translateX(50px);
+        }
+        div.cubo_magico > div.cb15 {
+            background-color: #178;
+            right: 0px;
+            top: 50px;
+            transform: rotateY(90deg) translateZ(25px);
+        }
+        div.cubo_magico > div.cb16 {
+            background-color: #88d;
+            top: 100px;
+            transform: rotateY(90deg) translateZ(125px) translateX(100px);
+        }
+        div.cubo_magico > div.cb17 {
+            background-color: #dc143c;
+            top: 100px;
+            left: 50px;
+            transform: rotateY(90deg) translateZ(75px) translateX(50px);
+        }
+        div.cubo_magico > div.cb18 {
+            background-color: #200;
+            top: 100px;
+            right: 0px;
+            transform: rotateY(90deg) translateZ(25px);
+        }
+        div.cubo_magico > div.cb19 {
+            background-color: #ff00ff;
+            transform: translateZ(-125px) translateY(1px);
+        }
+        div.cubo_magico > div.cb20 {
+            background-color: #ff6347;
+            left: 50px;
+            transform: translateZ(-125px) translateY(1px);
+        }
+        div.cubo_magico > div.cb21 {
+            background-color: #00ffff;
+            right: 0px;
+            transform: translateZ(-125px) translateY(1px) translateX(1px);
+        }
+        div.cubo_magico > div.cb22 {
+            background-color: #ff1493;
+            top: 50px;
+            transform: translateZ(-125px) translateY(1px);
+        }
+        div.cubo_magico > div.cb23 {
+            background-color: #008b8b;
+            left: 50px;
+            top: 50px;
+            transform: translateZ(-125px) translateY(1px);
+        }
+        div.cubo_magico > div.cb24 {
+            background-color: #6a5acd;
+            right: 0px;
+            top: 50px;
+            transform: translateZ(-125px) translateY(1px);
+        }
+        div.cubo_magico > div.cb25 {
+            background-color: #ffd700;
+            top: 100px;
+            transform: translateZ(-125px) translateY(1px);
+        }
+        div.cubo_magico > div.cb26 {
+            background-color: #fa8072;
+            top: 100px;
+            left: 50px;
+            transform: translateZ(-125px) translateY(1px);
+        }
+        div.cubo_magico > div.cb27 {
+            background-color: #8b4513;
+            top: 100px;
+            right: 0px;
+            transform: translateZ(-125px) translateY(1px);
+        }
+        div.cubo_magico > div.cb28 {
+            background-color: #59b;
+            transform: translateZ(25px);
+        }
+        div.cubo_magico > div.cb29 {
+            background-color: #f89;
+            left: 50px;
+            transform: translateZ(25px);
+        }
+        div.cubo_magico > div.cb30 {
+            background-color: #222;
+            right: 0px;
+            transform: translateZ(25px);
+        }
+        div.cubo_magico > div.cb31 {
+            background-color: #ff9;
+            top: 50px;
+            transform: translateZ(25px);
+        }
+        div.cubo_magico > div.cb32 {
+            background-color: #003;
+            left: 50px;
+            top: 50px;
+            transform: translateZ(25px);
+        }
+        div.cubo_magico > div.cb33 {
+            background-color: #444;
+            right: 0px;
+            top: 50px;
+            transform: translateZ(25px);
+        }
+        div.cubo_magico > div.cb34 {
+            background-color: #400;
+            top: 100px;
+            transform: translateZ(25px);
+        }
+        div.cubo_magico > div.cb35 {
+            background-color: #49f;
+            top: 100px;
+            left: 50px;
+            transform: translateZ(25px);
+        }
+        div.cubo_magico > div.cb36 {
+            background-color: #890;
+            top: 100px;
+            right: 0px;
+            transform: translateZ(25px);
+        }
+        div.cubo_magico > div.cb37 {
+            background-color: #c90;
+            transform: rotateX(90deg) translateZ(25px);
+        }
+        div.cubo_magico > div.cb38 {
+            background-color: #6f8;
+            left: 50px;
+            transform: rotateX(90deg) translateZ(25px);
+        }
+        div.cubo_magico > div.cb39 {
+            background-color: #6495ed;
+            right: 0px;
+            transform: rotateX(90deg) translateZ(25px);
+        }
+        div.cubo_magico > div.cb40 {
+            background-color: #ff8c00;
+            top: 50px;
+            transform: rotateX(90deg) translateZ(75px) translateY(-50px);
+        }
+        div.cubo_magico > div.cb41 {
+            background-color: #7fff00;
+            left: 50px;
+            top: 50px;
+            transform: rotateX(90deg) translateZ(75px) translateY(-50px);
+        }
+        div.cubo_magico > div.cb42 {
+            background-color: #122;
+            right: 0px;
+            top: 50px;
+            transform: rotateX(90deg) translateZ(75px) translateY(-50px);
+        }
+        div.cubo_magico > div.cb43 {
+            background-color: #800080;
+            top: 100px;
+            transform: rotateX(90deg) translateZ(125px) translateY(-100px);
+        }
+        div.cubo_magico > div.cb44 {
+            background-color: #f4a460;
+            top: 100px;
+            left: 50px;
+            transform: rotateX(90deg) translateZ(125px) translateY(-100px);
+        }
+        div.cubo_magico > div.cb45 {
+            background-color: #a0522d;
+            top: 100px;
+            right: 0px;
+            transform: rotateX(90deg) translateZ(125px) translateY(-100px);
+        }
+        div.cubo_magico > div.cb46 {
+            background-color: #4169e1;
+            transform: rotateX(90deg) translateZ(-125px) translateY(-100px);
+        }
+        div.cubo_magico > div.cb47 {
+            background-color: #022;
+            left: 50px;
+            transform: rotateX(90deg) translateZ(-125px) translateY(-100px);
+        }
+        div.cubo_magico > div.cb48 {
+            background-color: #a67;
+            right: 0px;
+            transform: rotateX(90deg) translateZ(-125px) translateY(-100px);
+        }
+        div.cubo_magico > div.cb49 {
+            background-color: #9acd32;
+            top: 50px;
+            transform: rotateX(90deg) translateZ(-75px) translateY(-50px);
+        }
+        div.cubo_magico > div.cb50 {
+            background-color: #a22;
+            left: 50px;
+            top: 50px;
+            transform: rotateX(90deg) translateZ(-75px) translateY(-50px)
+        }
+        div.cubo_magico > div.cb51 {
+            background-color: #20f;
+            right: 0px;
+            top: 50px;
+            transform: rotateX(90deg) translateZ(-75px) translateY(-50px);
+        }
+        div.cubo_magico > div.cb52 {
+            background-color: #df4;
+            top: 100px;
+            transform: rotateX(90deg) translateZ(-25px);
+        }
+        div.cubo_magico > div.cb53 {
+            background-color: #cb9;
+            top: 100px;
+            left: 50px;
+            transform: rotateX(90deg) translateZ(-25px);
+        }
+        div.cubo_magico > div.cb54 {
+            background-color: #483d8b;
+            top: 100px;
+            right: 0px;
+            transform: rotateX(90deg) translateZ(-25px);
+        }
+        @keyframes Animar {
+            from {
+                transform: rotate3d(1, 1, 1, 0deg);
+            }
+            to {
+                transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cubo_magico">
+        <div class="cb1"></div>
+        <div class="cb2"></div>
+        <div class="cb3"></div>
+        <div class="cb4"></div>
+        <div class="cb5"></div>
+        <div class="cb6"></div>
+        <div class="cb7"></div>
+        <div class="cb8"></div>
+        <div class="cb9"></div>
+        <div class="cb10"></div>
+        <div class="cb11"></div>
+        <div class="cb12"></div>
+        <div class="cb13"></div>
+        <div class="cb14"></div>
+        <div class="cb15"></div>
+        <div class="cb16"></div>
+        <div class="cb17"></div>
+        <div class="cb18"></div>
+        <div class="cb19"></div>
+        <div class="cb20"></div>
+        <div class="cb21"></div>
+        <div class="cb22"></div>
+        <div class="cb23"></div>
+        <div class="cb24"></div>
+        <div class="cb25"></div>
+        <div class="cb26"></div>
+        <div class="cb27"></div>
+        <div class="cb28"></div>
+        <div class="cb29"></div>
+        <div class="cb30"></div>
+        <div class="cb31"></div>
+        <div class="cb32"></div>
+        <div class="cb33"></div>
+        <div class="cb34"></div>
+        <div class="cb35"></div>
+        <div class="cb36"></div>
+        <div class="cb37"></div>
+        <div class="cb38"></div>
+        <div class="cb39"></div>
+        <div class="cb40"></div>
+        <div class="cb41"></div>
+        <div class="cb42"></div>
+        <div class="cb43"></div>
+        <div class="cb44"></div>
+        <div class="cb45"></div>
+        <div class="cb46"></div>
+        <div class="cb47"></div>
+        <div class="cb48"></div>
+        <div class="cb49"></div>
+        <div class="cb50"></div>
+        <div class="cb51"></div>
+        <div class="cb52"></div>
+        <div class="cb53"></div>
+        <div class="cb54"></div>
+    </div>
+</body>
+</html>

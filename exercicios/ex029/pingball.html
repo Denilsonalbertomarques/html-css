@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingball</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: #4d3c90;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div.container__pingball {
+            position: relative;
+            width: 20rem;
+            height: 25rem;
+            transform-style: preserve-3d;
+            perspective: 2rem;
+        }
+        div.container__pingball > div.pingball {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0.2rem 0.3rem #0003, 0 0.2rem 0.6rem #0002, 0 0.3rem 0.9rem #0001;
+            border-radius: 1.5rem;
+            background-image: url(imagens/espaco.jpg);
+            background-size: cover;
+
+            transition: .3s linear;
+        }
+        div.container__pingball:hover div.pingball { 
+            transform: rotateX(2deg) translateY(-1rem);
+        }
+    </style>
+</head>
+<body>
+    <div class="container__pingball">
+        <div class="pingball">
+            <div class="pingball__ball"></div>
+        </div>
+    </div>
+</body>
+</html>
