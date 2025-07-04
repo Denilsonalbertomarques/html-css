@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html { 
+            font-size: 62.5%;
+        }
+        body { 
+            background-color: #030405;
+
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div { 
+            width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+            position: relative;
+            background-image: linear-gradient(to left, dodgerblue, transparent 35%);
+
+            animation: rotate 5s linear .2s infinite normal backwards;
+        }
+        div::after { 
+            content: "";
+            position: absolute;
+            background-color: #030405;
+            inset: .6rem;
+            border-radius: 50%;
+        }
+        @keyframes rotate {
+            from { 
+                transform: rotateZ(0deg);
+                filter: hue-rotate(0deg);
+            }
+            to { 
+                transform: rotateZ(360deg);
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backface-visibility</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #666;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        article.card {
+            width: 20rem;
+            height: 30rem;
+
+            perspective: 27rem;
+            
+        }
+        .card__flip {
+            width: 20rem;
+            height: 30rem;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: .5s linear;
+
+            transform-origin: 10rem 30rem;
+            
+        }
+        .card__flip  div.front, div.back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 1.5rem;
+            box-shadow: 0 0 .9rem #0002, 0 0 1.3rem #0002, 0 0 2rem #0002;
+
+            backface-visibility: hidden;
+            background-size: cover;
+        }
+        div.front {
+            background-image: url('imagens/espaco.jpg');
+            
+        }
+        div.back {
+            background-image: url('imagens/background01.jpg');
+            transform: rotateY(180deg);
+        }
+        article.card:hover .card__flip {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <article class="card">
+        <div class="card__flip">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+    </article>
+</body>
+</html>

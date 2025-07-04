@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspective</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            background-color: #2e8b57;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div.cubo {
+            width: 15rem;
+            height: 15rem;
+            
+            position: relative;
+
+            transform: rotate3d(1, 1, 1, -45deg);
+            transform-style: preserve-3d;
+
+            perspective: 20rem;
+            perspective-origin: 14rem -20rem;
+
+        }
+        div.cubo > div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: .2rem solid #fff;
+            opacity: .5;
+        }
+        .cubo__front { 
+            transform: translateZ(7.5rem);
+            background-color: #00f;
+        }
+        .cubo__back { 
+            transform: translateZ(-7.5rem);
+            background-color: #f00;
+        }
+        .cubo__left { 
+            transform: rotateY(90deg) translateZ(-7.5rem);
+            background-color: #0f0;
+        }
+        .cubo__right { 
+            transform: rotateY(90deg) translateZ(7.5rem);
+            background-color: #ff0;
+        }
+        .cubo__top { 
+            transform: rotateX(90deg) translateZ(7.5rem);
+            background-color: #ff4500;
+        }
+        .cubo__bottom { 
+            transform: rotateX(90deg) translateZ(-7.5rem);
+            background-color: #800080;
+        }
+    </style>
+</head>
+<body>
+    <div class="cubo">
+        <div class="cubo__front"></div>
+        <div class="cubo__back"></div>
+        <div class="cubo__left"></div>
+        <div class="cubo__right"></div>
+        <div class="cubo__top"></div>
+        <div class="cubo__bottom"></div>
+    </div>
+</body>
+</html>

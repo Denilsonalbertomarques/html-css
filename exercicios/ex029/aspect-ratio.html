@@ -5,18 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aspect-ratio CSS3</title>
     <style>
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body { 
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
         html {
             font-size: 62.5%;
         }
         div#video {
-            background-color: #00ffff;
-            width: 32rem;
+            position: relative;
             aspect-ratio: 16 / 9;
-            
+            background-color: #00ffff;
+            width: clamp(32rem, 50vw, 50rem);
+        }
+        video { 
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        div.image_4_3 { 
+            width: 32rem;
+            position: relative;
+            aspect-ratio: 4 / 3;
+            background-color: crimson;
+        }
+        div.image_4_3 img { 
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+        div.image_3_4 { 
+            width: 32rem;
+            position: relative;
+            aspect-ratio: 3 / 4;
+            background-color: green;
+        }
+        div.image_3_4 img { 
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+        div.image_1_1 { 
+            width: 32rem;
+            position: relative;
+            aspect-ratio: 1 / 1;
+            background-color: orangered;
+        }
+        div.image_1_1 img { 
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
         }
     </style>
 </head>
 <body>
-    <div id="video"></div>
+    <div id="video">
+        <video poster="../ex012/imagens/limoes-capa.png" loop controls autoplay>
+            <source src="../ex012/midias/ACESSE O OFICIAL - TorrentDosFilmes.SE.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="image_4_3">
+        <img src="imagens/background01.jpg" alt="">
+    </div>
+    <div class="image_3_4">
+        <img src="imagens/background01.jpg" alt="">
+    </div>
+    <div class="image_1_1">
+        <img src="imagens/background01.jpg" alt="">
+    </div>
 </body>
 </html>

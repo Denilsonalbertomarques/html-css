@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advence button</title>
+    <style>
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+            text-decoration: none;
+            color: #000;
+        }
+        html { 
+            font-size: 62.5%;
+        }
+        body { 
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div.advence-container { 
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div.advence-container button:not(div.separete) { 
+            margin: .3rem;
+            padding: 1.8rem;
+            cursor: pointer;
+            text-align: center;
+            border-radius: .8rem;
+            transition: .5s linear;
+            font-size: min(10vw, 2rem);
+            border: .1rem solid #000;
+        }
+        div.advence-container button:hover:not(div.separete) { 
+            background-color: #000;
+            color: #fff;
+        }
+        button.second { 
+            color: #fff;
+            background-color: #121212;
+        }
+        button.next { 
+            order: 1;
+        }
+        div.separete { 
+            margin: .3rem;
+            border: none;
+            outline: none;
+            font-size: min(10vw, 2rem);
+            padding: 3rem 1rem 1rem 1rem;
+        }
+        button a { 
+            display: block;
+        }
+        @media screen and (min-width:320px) and (max-width:480px) {
+            div.advence-container button:not(div.separete) { 
+                padding: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="advence-container">
+        <button class="prev" tabindex="1">Prev</button>
+        <button class="next" tabindex="0">Next</button>
+        <button class="first" tabindex="2">1</button>
+        <button class="second" tabindex="3">2</button>
+        <button class="third" tabindex="4">3</button>
+        <div class="separete">...</div>
+    </div>
+</body>
+</html>

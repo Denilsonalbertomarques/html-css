@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atom animation</title>
+    <style>
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html { 
+            font-size: 62.5%;
+        }
+        body { 
+            height: 100vh;
+            width: 100vw;
+            background-color: #030405;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div#atom { 
+            width: 9rem;
+            height: 9rem;
+            border-radius: 50%;
+            position: relative;
+            background-color: transparent;
+            box-shadow: inset 0 0 2.5rem #eb5be5, inset 0 0 3rem #eb5be5, inset 0 0 3.5rem #eb5eb520;
+            transform-style: preserve-3d;
+            animation: rotate .5s linear infinite normal;
+        }
+        div#atom div.electrons {
+            width: 9rem;
+            height: 9rem; 
+            position: absolute;
+            border: .4rem solid #eb5eb5;
+            border-radius: 50%;  
+        }
+        div#atom div.electrons:nth-of-type(1) { 
+            border-right: transparent;
+            border-bottom: transparent;
+            border-top: transparent;
+            transform: rotateX(45deg) translateX(-2rem);
+        }
+        div#atom div.electrons:nth-of-type(2) { 
+            border-right: transparent;
+            border-bottom: transparent;
+            border-top: transparent;
+            transform: rotateX(45deg) rotateY(45deg) translateX(-2rem);
+        }
+        div#atom div.electrons:nth-of-type(3) { 
+            border-right: transparent;
+            border-bottom: transparent;
+            border-top: transparent;
+            transform: rotateX(45deg) rotateY(-45deg) translateX(-2rem);
+        }
+        div#atom div.electrons:nth-of-type(4) { 
+            border-left: transparent;
+            border-bottom: transparent;
+            border-top: transparent;
+            transform: rotateX(45deg) translateX(2rem);
+        }
+        div#atom div.electrons:nth-of-type(5) { 
+            border-left: transparent;
+            border-bottom: transparent;
+            border-top: transparent;
+            transform: rotateX(45deg) rotateY(45deg) translateX(2rem);
+        }
+        div#atom div.electrons:nth-of-type(6) { 
+            border-left: transparent;
+            border-bottom: transparent;
+            border-top: transparent;
+            transform: rotateX(45deg) rotateY(-45deg) translateX(2rem);
+        }
+        @keyframes rotate {
+            from { 
+                transform: rotate(0deg);
+            }
+            to { 
+                transform:  rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="atom">
+        <div class="electrons"></div>
+        <div class="electrons"></div>
+        <div class="electrons"></div>
+        <div class="electrons"></div>
+        <div class="electrons"></div>
+        <div class="electrons"></div>
+    </div>
+</body>
+</html>

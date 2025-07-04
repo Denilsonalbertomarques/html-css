@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfom-origin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div {
+            border: .2rem solid red;
+            width: 15rem;
+            height: 15rem;
+            background: url('imagens/1719253993462.jpg') no-repeat;
+            background-size: cover;
+            transform: rotate(45deg);
+            transform-origin: 7.5rem 15rem;
+
+            animation: animeOrigin 9s ease-in-out infinite normal;
+        }
+        @keyframes animeOrigin {
+            from {
+                transform: rotate(0deg);
+            }
+            to { 
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+     <div></div>
+</body>
+</html>

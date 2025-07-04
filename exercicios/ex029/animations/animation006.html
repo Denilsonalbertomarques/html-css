@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+    <style>
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            user-select: none;
+        }
+        html { 
+            font-size: 62.5%;
+        }
+        body { 
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-image: linear-gradient(to bottom, #800080, #00008b, #0000ff);
+        }
+        div.waves { 
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .waves__element { 
+            font-size: clamp(3rem, 10vw, 4.2rem);
+            letter-spacing: 1.3rem;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            animation: waves 2s linear infinite normal backwards;
+        }
+        @keyframes waves {
+            0% { 
+                transform: translateY(0);
+            }
+            50% { 
+                transform: translateY(-3.5rem);
+            }
+            100% { 
+                transform: translateY(0);
+            }
+        }
+        .waves__element:nth-of-type(1) { 
+            animation-duration: .7s;
+        }
+        .waves__element:nth-of-type(2) { 
+            animation-delay: .3s;
+            animation-duration: .9s;
+        }
+        .waves__element:nth-of-type(3) { 
+            animation-delay: .5;
+            animation-duration: 1s;
+        }
+        .waves__element:nth-of-type(4) { 
+            animation-delay: .7s;
+            animation-duration: 1.1s;
+        }
+        .waves__element:nth-of-type(5) { 
+            animation-delay: .9s;
+            animation-duration: 1.2s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="waves">
+        <div class="waves__element">w</div>
+        <div class="waves__element">a</div>
+        <div class="waves__element">v</div>
+        <div class="waves__element">e</div>
+        <div class="waves__element">s</div>
+    </div>
+</body>
+</html>

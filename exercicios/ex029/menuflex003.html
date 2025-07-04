@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-menu</title>
+    <style>
+        /* Configuração Geral */
+        :root { 
+            --white-light-200: #efe9e9;
+            --white-light-300: #ededed;
+            --white-light-400: #eeeeee;
+            --white-light-500: #f3efef;
+            --white-light-600: #f1f0f0;
+            --white-light-700: #f0ebeb;
+            --white-light-800: #f9f7f7;
+            --white-light-900: #ffffff;
+            --black-light-100: #555050;
+            --black-light-200: #2b2b2b;
+            --black-light-300: #222222;
+            --black-light-400: #1d1c1c;
+            --black-light-500: #161616;
+            --black-light-600: #101010;
+            --black-light-700: #121212;
+            --black-light-800: #0a0a0a;
+            --black-light-900: #000000;
+            --dodgerblue-light-100: #60acf8;
+            --dodgerblue-light-200: #4d98e2;
+            --dodgerblue-light-300: #3592f0;
+            --dodgerblue-light-400: #2c8ded;
+            --dodgerblue-light-500: #2082e3;
+            --dodgerblue-light-600: #1d7dde;
+            --dodgerblue-light-700: #117ae2;
+            --dodgerblue-light-800: #097ef4;
+            --dodgerblue-light-900: #0080ff;
+            --padding-01: .9375rem;
+            --padding-02: .5rem;
+            --padding-03: 0 .5rem;
+            --padding-04: .125rem 0;
+            --padding-05: .125rem;
+            --padding-06: 0 .625rem;
+            --padding-07: .4375rem;
+            --font-size: clamp(1rem, 8vw, 1.1rem);
+            --font-size-letter: min(10vw, 1.2rem);
+            --border-bottom: .125rem solid #efe9e9;
+        }
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-size: var(--font-size);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body { 
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--white-light-800);
+        }
+        header { 
+            width: 100%;
+        }
+        header nav#navbar { 
+            width: 100%;
+            padding: var(--padding-01);
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: var(--border-bottom);
+        }
+        .logo__description { 
+            display: flex;
+            align-items: center;
+            flex-flow: row nowrap;
+        }
+        .logo__description span.img img { 
+            width: 2.375rem;
+            height: 2.375rem;
+            object-fit: cover;
+        }
+        .logo__description span.letter { 
+            font-size: var(--font-size-letter);
+            display: block;
+            color: var(--black-light-400);
+        }
+        form { 
+            display: none;
+        }
+        nav#navbar ul.menu { 
+            display: flex;
+            align-items: center;
+            flex-flow: row nowrap;
+            padding: var(--padding-03);
+        }
+        .menu__items { 
+            padding: var(--padding-02);
+        }
+        .items__description { 
+            padding: var(--padding-04);
+            color: var(--black-light-100);
+            transition: .5s linear;
+            display: block;
+        }
+        .items__description:hover { 
+            color: var(--black-light-300);
+        }
+        div.btn { 
+            display: none;
+        }
+        /* Configuração Mobile */
+        @media screen and (min-width: 20em) and (max-width: 30em) {
+            .logo__description span.letter { 
+                display: none;
+            }
+        }
+        /* Configuração Desktop */
+        @media screen and (min-width: 45em) {
+            logo__description span.img img { 
+                width: 3.75rem;
+                height: 3.75rem;
+            }
+            .logo__description span.letter { 
+                color: var(--black-light-300);
+                font-size: min(10vw, 1.5rem);
+            }
+            .menu__items { 
+                padding: var(--padding-06);
+            }
+            .logo__description span.letter, div.btn, form { 
+                display: block;
+            }
+            form { 
+                display: flex;
+                align-items: center;
+                flex-flow: row nowrap;
+                padding: var(--padding-03);
+            }
+            form .boxInput { 
+                display: flex;
+                align-items: center;
+                flex-flow: row nowrap;
+                padding: var(--padding-03);
+                justify-content: space-evenly;
+            }
+            form .boxInput input { 
+                width: 45%;
+                padding: var(--padding-07);
+                border: none;
+                background-color: transparent;
+                color: var(--black-light-100);
+                outline: .0625rem solid var(--black-light-100);
+                font-size: var(--padding-01);
+            }
+            button { 
+                padding: var(--padding-07);
+                border: none;
+                background-color: transparent;
+                border: .0625rem solid var(--black-light-400);
+                border-radius: .2rem;
+                font-size: var(--padding-01);
+                transition: .5s linear;
+                background-color: var(--black-light-300);
+                color: var(--white-light-700);
+            }
+            button:hover { 
+                cursor: pointer;
+                background-color: var(--black-light-900);
+            }
+            button:focus-within { 
+                outline: .0625rem solid var(--black-light-400);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="#" class="logo" tabindex="0">
+                <div class="logo__description">
+                    <span class="img">
+                        <img src="imagens/undraw_shopping_re_hdd9.svg" alt="">
+                    </span>
+                    <span class="letter">PROHELP</span>
+                </div>
+            </a>
+            <ul class="menu">
+                <li class="menu__items">
+                    <a href="#" class="items__description" tabindex="0">Documentacion</a>
+                </li>
+                <li class="menu__items">
+                    <a href="#" class="items__description" tabindex="0">Contact</a>
+                </li>
+                <li class="menu__items">
+                    <a href="#" class="items__description" tabindex="0">Project</a>
+                </li>
+            </ul>
+            <form action="#" method="get" autocomplete="off">
+                <div class="boxInput">
+                    <input type="email" name="enderecoemail" id="enderecoemali" placeholder="Enter your email" required autocomplete="email">
+                    <input type="password" name="senha" id="senha" placeholder="Enter your password" required autocomplete="current-password" minlength="6" maxlength="8">
+                </div>
+                <button type="submit" tabindex="0">Login</button>
+            </form>
+        </nav>
+    </header>
+</body>
+</html>

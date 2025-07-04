@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <style>
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html { 
+            font-size: 62.5%;
+        }
+        body { 
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div.relogio { 
+            width: 15rem;
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+            box-shadow: 0 0 .1rem #0001, 0 0 1.8rem #0001, 0 0 .2rem #0001;
+            position: relative;
+            
+        }
+        div.relogio div { 
+            position: absolute;
+        }
+        div.reference-pointer { 
+            width: .7rem;
+            height: .7rem;
+            border: .2rem solid #000;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        div.pointer1 { 
+            position: absolute;
+            width: 2.5rem;
+            height: .2rem;
+            border-radius: 1.5rem 0 0 1.5rem;
+            background-color: #000;
+            top: 42%;
+            left: 41%;
+            transform: translateX(-41%) translateY(42%) rotateZ(45deg);
+        }
+        div.pointer2 {
+            position: absolute;
+            width: 4rem;
+            height: .2rem;
+            border-radius: 0 1.5rem 1.5rem 0;
+            background-color: #000;
+            top: 49%;
+            left: 40%;
+            transform: translateX(44%) translateY(50%) rotateZ(-180deg);
+        }
+        div.hours3, div.hours6, div.hours9, div.hours12 { 
+            width: .4rem;
+            height: .4rem;
+            background-color: #000;
+            border-radius: 50%;
+        }
+        div.hours12 { 
+            left: 50%;
+            top: 5%;
+        }
+        div.hours3 { 
+            right: 5%;
+            top: 50%;
+        }
+        div.hours6 { 
+            bottom: 5%;
+            left: 50%;
+        }
+        div.hours9 { 
+            left: 5%;
+            top: 50%;
+        }    
+        div.hours1, div.hours2, div.hours4, div.hours5, div.hours7, div.hours8, div.hours10, div.hours11 { 
+            width: .3rem;
+            height: .3rem;
+            background-color: #000;
+            border-radius: 50%;
+            opacity: .3;
+        }
+        div.hours11 { 
+            top: 11%;
+            left: 26%;
+        }
+        div.hours10 { 
+            top: 30%;
+            left: 10%;
+        }
+        div.hours8 { 
+            top: 72%;
+            left: 11%;
+        }
+        div.hours7 { 
+            top: 89%;
+            left: 29%;
+        }
+        div.hours5 { 
+            top: 89%;
+            right: 29%;
+        }
+        div.hours4 { 
+            top: 72%;
+            right: 11%;
+        }
+        div.hours2 { 
+            top: 30%;
+            right: 10%;
+        }
+        div.hours1 { 
+            top: 11%;
+            right: 26%;
+        }
+    </style>
+</head>
+<body>
+    <div class="relogio">
+        <div class="reference-pointer"></div>
+        <div class="pointer1"></div>
+        <div class="pointer2"></div>
+        <div class="hours1"></div>
+        <div class="hours2"></div>
+        <div class="hours3"></div>
+        <div class="hours4"></div>
+        <div class="hours5"></div>
+        <div class="hours6"></div>
+        <div class="hours7"></div>
+        <div class="hours8"></div>
+        <div class="hours9"></div>
+        <div class="hours10"></div>
+        <div class="hours11"></div>
+        <div class="hours12"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegation map</title>
+    <style>
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html { 
+            font-size: 62.5%;
+        }
+        body { 
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div.navegation-map { 
+            background-color: #020d02;
+            width: 40rem;
+            height: 40rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div.navegation-map::before { 
+            content: "";
+            position: absolute;
+            width: .1rem;
+            height: 40rem;
+            background-color: #242424;
+            opacity: .4; 
+        }
+        div.navegation-map::after { 
+            content: "";
+            position: absolute;
+            width: .1rem;
+            height: 40rem;
+            background-color: #242424;
+            opacity: .4;
+            transform: rotateZ(270deg);
+        }
+        div.radar { 
+            width: 40rem;
+            height: 40rem;
+            position: relative; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div.radar div {
+            position: absolute;
+        }
+        div.radar #rd-01, #rd-02, #rd-03, #rd-04 { 
+            border: .1rem solid #080;
+            border-radius: 50%;
+        }
+        div.radar #rd-01 { 
+            width: 35rem;
+            height: 35rem;
+        }
+        div.radar #rd-02 { 
+            width: 25rem;
+            height: 25rem;
+        }
+        div.radar #rd-03 { 
+            width: 15rem;
+            height: 15rem;
+        }
+        div.radar #rd-04 { 
+            width: 7.5rem;
+            height: 7.5rem;
+        }
+        @keyframes radar  {
+            from { 
+                transform: rotate(0deg);
+            }
+            to { 
+                transform: rotate(360deg);
+            }
+        }
+        div.navegation-map #enemy1, #enemy2, #enemy3 { 
+            position: absolute;
+            width: .2rem;
+            height: .2rem;
+            background-color: #ccc;
+            border-radius: 50%;
+            opacity: 0;
+            animation: opacity 2s linear infinite normal;
+        }
+        #enemy1 { 
+            top: 9rem;
+            right: 8rem;
+        }
+        #enemy2 { 
+            top: 18rem;
+            right: 15rem;
+            animation-delay: 5s;
+        }
+        #enemy3 { 
+            top: 27rem;
+            left: 14rem;
+            animation-delay: 7s;
+        }
+        @keyframes opacity {
+            from { 
+                opacity: 0;
+            }
+            to { 
+                opacity: .3;
+            }
+        }
+        div.navegation-map #rotator { 
+            position: absolute;
+            width: 87%;
+            height: 87%;
+            border-radius: 50%;
+            pointer-events: none;
+            background-image: conic-gradient(transparent 0deg, #0805 250deg, #0808 359deg, #fff);
+            animation: radar 9s linear infinite normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="navegation-map">
+        <div class="radar">
+            <div id="rd-01"></div>
+            <div id="rd-02"></div>
+            <div id="rd-03"></div>
+            <div id="rd-04"></div>
+        </div>
+        <div id="enemy1"></div>
+        <div id="enemy2"></div>
+        <div id="enemy3"></div>
+        <div id="rotator"></div>
+    </div>
+</body>
+</html>

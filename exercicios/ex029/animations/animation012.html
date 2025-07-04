@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html { 
+            font-size: 62.5%;
+        }
+        body { 
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #030405;
+        }
+        div#circle { 
+            width: 15rem;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        div#circle  div { 
+            border: .1rem solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            width: 10rem;
+            aspect-ratio: 1 / 1;
+
+            animation: animeSkale 2s linear infinite normal;
+        }
+        div#circle div.first { 
+            border-color: crimson;
+            animation-delay: 0.5s;
+        }
+        div#circle div.second { 
+            border-color: orangered;
+            animation-delay: 1s;
+        }
+        div#circle div.third { 
+            border-color: dodgerblue;
+            animation-delay: 1.5s;
+        }
+        div#circle div.fourth { 
+            border-color: orange;
+            animation-delay: 2s;
+        }
+        @keyframes animeSkale {
+            0% { 
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            100% { 
+                transform: scale(2);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="circle">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="fourth"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>flex_menu</title>
+    <style>
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #5f9ea0;
+        }
+        body { 
+            width: 100vw;
+            height: 100vh;
+            background-color: aliceblue;
+        }
+        header div.side-bar nav.bar {
+            width: 100%; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 .5rem;
+            box-shadow: 0 .2rem .375rem #0001;
+            transition: .5s linear;
+            user-select: none;
+            background-color: #fff;
+        }
+        a.btn-logo { 
+            display: flex;
+            align-items: center;
+        }
+        a.btn-logo span.logo img { 
+            object-fit: cover;
+            width: 3rem;
+            height: 3rem;
+        }
+        a.btn-logo span.logo-letter { 
+            font-size: clamp(1.9rem, 10vw, 2.5rem);
+            font-weight: bold;
+        }
+        nav.bar form { 
+            order: 1;
+        }
+        form div.boxInput input[type="text"] { 
+            padding: 0 .2rem 0 .5rem;
+            border: none;
+            outline: .0625rem solid #5f9ea0;
+            color: #333;
+        }
+        div.toogle-button input[type="checkbox"] { 
+            appearance: none;
+            position: relative;
+            width: 2.5rem;
+            height: 1.25rem;
+            border-radius: calc(2.5rem / 2);
+            border: .0625rem solid #5f9ea0;
+            display: none;
+            cursor: pointer;
+        }
+        ul.menu { 
+            padding: 0 .6rem;
+            display: flex;
+        }
+        li.items a.items__description { 
+            padding: 0 .9rem;
+            display: flex;
+            align-items: center;
+        }
+        a.items__description span.icon__description { 
+            display: none;
+            order: -1;
+        }
+        @media screen and (min-width: 20em) and (max-width: 30em) {
+
+            nav.bar form div.boxInput input[type="text"] { 
+                display: none;
+            }
+        }
+        @media screen and (min-width: 45em) {
+            div.side-bar nav.bar { 
+                justify-content: space-evenly!important;
+            }
+            a.items__description { 
+                gap: .4rem;
+            }
+            a.items__description span.icon__description { 
+                display: block;
+            }
+            nav.bar form { 
+                order: 0;
+                flex: 0 0 28%;
+            }
+            form div.boxInput { 
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                border-radius: 1.5625rem;
+                border: .0625rem solid #5f9ea0;
+                padding: .2rem;
+                cursor: pointer;
+            } 
+            form div.boxInput input[type="text"] { 
+                width: 85%;
+                outline: none;
+                background-color: transparent;
+            }
+            div.toogle-button input[type="checkbox"] { 
+                display: flex;
+                align-items: center;
+            } 
+            div.toogle-button input[type="checkbox"]::before { 
+                content: "";
+                position: absolute;
+                background-color: #ccc;
+                width: .75rem;
+                height: .75rem;
+                left: .3125rem;
+                border-radius: 50%;
+                transition: .5s linear;
+            } 
+            input[type="checkbox"]:checked::before { 
+                background-color: #add8e6!important;
+                transform: translateX(calc(2.5rem - 1.375rem));
+            } 
+            nav.bar:has(input[type="checkbox"]:checked) { 
+                background-color: #020612;
+            } 
+            nav.bar:has(input[type="checkbox"]:checked) input[type="text"] { 
+                color: #ccc;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="side-bar">
+            <nav class="bar">
+                <a href="#" class="btn-logo">
+                    <span class="logo">
+                        <img src="imagens/undraw_shopping_re_hdd9.svg" alt="">
+                    </span>
+                    <span class="logo-letter">UNIf</span>
+                </a>
+                <form action="#" method="post" autocomplete="off">
+                    <div class="boxInput">
+                        <input type="text" id="search" name="search" placeholder="Search">
+                        <a href="#" class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                </form>
+                <div class="toogle-button">
+                    <input type="checkbox" id="toogle">
+                </div>
+                <ul class="menu">
+                    <li class="items">
+                        <a href="#" class="items__description">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="icon__description">Feed</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#" class="items__description">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="icon__description">Favorite</span>               
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#" class="items__description">
+                            <i class="fa-regular fa-user"></i>
+                            <span class="icon__description">Profile</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>

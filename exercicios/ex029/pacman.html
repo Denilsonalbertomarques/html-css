@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            background-color: #030405;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        div.canal {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            border-top: .4rem solid #00f;
+            border-bottom: .4rem solid #00f;
+            padding: 1rem;
+            
+        }
+        div.canal__pacman { 
+            
+            border-radius: 50%;
+            
+            border: 2.5rem solid #ffdd00;
+            border-right: 2.5rem solid transparent;
+
+            transform: translateX(2.5rem);
+        }
+        div.canal__pacman::before {
+            content: '';
+            position: absolute;
+            width: 1rem;
+            height: 1rem;
+            background-color: #030405;
+            border-radius: 50%;
+            
+            top: -2rem;
+        }
+        div.canal__gomas {
+            width: 2.5rem;
+            height: 2.5rem;
+            
+            border-radius: 50%;
+        }
+        div.canal__gomas:nth-of-type(2) { 
+            background-color: #1e90ff;
+        }
+        div.canal__gomas:nth-of-type(3) { 
+            background-color: #dc143c;
+        }
+        div.canal__gomas:nth-of-type(4) { 
+            background-color: #808080;
+        }
+        div.canal__gomas:nth-of-type(5) { 
+            background-color: #008000;
+        }
+        div.canal__gomas:nth-of-type(6) { 
+            background-color: #ffff00;
+        }
+    </style>
+</head>
+<body>
+    <div class="canal">
+        <div class="canal__pacman"></div>
+        <div class="canal__gomas"></div>
+        <div class="canal__gomas"></div>
+        <div class="canal__gomas"></div>
+        <div class="canal__gomas"></div>
+        <div class="canal__gomas"></div>
+    </div>
+</body>
+</html>
