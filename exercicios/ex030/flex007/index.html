@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexblebox</title>
+    <style>
+        div.container {
+            background-color: #ffa07a;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid #000;
+            text-align: center;
+            padding: .75rem;
+        }
+        div#a {
+            order: 0;
+        }
+        div#b {
+            order: -2
+        }
+        div#c {
+            order: 8;
+
+        }
+        div#d {
+            order: 1;
+            
+        }
+        div#e {
+            order: 0;
+    
+        }
+        div#f {
+            order: -5;
+        
+        }
+        div#g {
+            order: 2;
+            
+        }
+        div#h {
+            order: 1;
+    
+        }
+        div#i {
+            order: 0;
+            
+        }
+        div#j {
+            order: 8;
+            
+        }
+        div#k {
+            order: -6;
+            
+        }
+        div#m {
+            order: 0;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="a">A</div>
+        <div class="item" id="b">B</div>
+        <div class="item" id="c">C</div>
+        <div class="item" id="d">D</div>
+        <div class="item" id="e">E</div>
+        <div class="item" id="f">F</div>
+        <div class="item" id="g">G</div>
+        <div class="item" id="h">H</div>
+        <div class="item" id="i">I</div>
+        <div class="item" id="j">J</div>
+        <div class="item" id="k">K</div>
+        <div class="item" id="m">M</div>
+    </div>
+</body>
+</html>

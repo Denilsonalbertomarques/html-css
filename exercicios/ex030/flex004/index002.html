@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexblebox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div.container {
+            background-color: #ffa07a;
+            height: 300px;
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: wrap-reverse;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+        div.items {
+            width: 60px;
+            margin: 1px;
+            height: 20px;
+        }
+        div.items:nth-child(even) {
+            background-color: #87cefa;
+        }
+        div.items:nth-child(odd) {
+            background-color: #87e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div>
+</body>
+</html>

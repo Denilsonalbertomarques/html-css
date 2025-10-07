@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexblebox</title>
+    <style>
+        div.container {
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row nowrap;            
+        }
+        div.item {
+            background-color: lightskyblue;
+            text-align: center;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        div.item:nth-of-type(1) {
+           flex: 0 0 auto;
+        }
+        div.item:nth-of-type(2) {
+            flex: auto;        
+        }
+        div.item:nth-of-type(3) {
+            flex: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexble Box</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div.container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+            height: 310px;
+            background-color: lightsalmon;
+            
+        }
+        div.items {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 3px;
+            flex: auto;
+            border: 1px solid #000;
+        }
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">
+            <img src="../../ex029/imagens/1719253610013.jpg" alt="Imagem de J.Tatum jogador de basquet da NBA">
+        </div>
+        <div class="items">
+            <img src="../../ex029/imagens/1719253993462.jpg" alt="Imagem de K.Durant jogador de basquet da NBA">
+        </div>
+        <div class="items">
+            <img src="../../ex029/imagens/1719254017788.jpg" alt="Imagem de J.Brunson jogador de basquet da NBA">
+        </div>
+        <div class="items">
+            <img src="../../ex029/imagens/1719254436669.jpg" alt="Imagem de A.Edwards jogador de basquet da NBA">
+        </div>
+        <div class="items">
+            <img src="../../ex029/imagens/1719254474913.jpg" alt="Imagem de L.Doncic jogador de basquet da NBA">
+        </div>
+        <div class="items">
+            <img src="../../ex029/imagens/1719518640439.jpg" alt="Imagem de J.Neves jogador de futebol do Benfica">
+        </div>
+        <div class="items">
+            <img src="../../ex029/imagens/1719503572415.jpg" alt="Imagem daa bandeira de Espanha">
+        </div>
+    </div>
+</body>
+</html>

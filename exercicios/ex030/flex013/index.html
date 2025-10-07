@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício em Flexbox</title>
+    <style>
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            line-height: 1.2em;
+        }
+        body { 
+            width: 100vw;
+            height: 100vh;
+            background-color: lightgray;
+        }
+        header { 
+            background-color: gray;
+            padding: .625rem;
+            color: white;
+            display: flex;
+        }
+        header h1 { 
+            text-align: center;
+        }
+        header nav > a { 
+            color: white;
+            background-color: black;
+            padding: .625rem;
+            text-align: center;
+            transition: .5s linear;
+            border-radius: .5rem;
+        }
+        header nav > a:hover { 
+            background-color: white;
+            color: black;
+        }
+        main { 
+            background-color: white;
+            padding: .625rem;
+            margin: .625rem;
+            border-radius: .5rem;
+            box-shadow: 0 .3rem .3rem rgba(0, 0, 0, 0.267);
+        }
+        @media screen and (min-width: 20em) and (max-width: 39em) {
+            header { 
+                flex-flow: column nowrap;
+                gap: .5rem;
+            }
+            nav { 
+                display: flex;
+                flex-flow: column nowrap;
+                gap: .5rem;
+            }
+        }
+        @media screen and (min-width: 40em) {
+            header { 
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav { 
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+            <a href="#">Opção 6</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Teste de Flexbox</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed numquam ab nobis veritatis aliquid. Pariatur, recusandae dolorum, quidem facilis vero eligendi repellat incidunt explicabo quisquam ab odio. Perspiciatis, molestias autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatum consectetur vitae illum ea sapiente facilis voluptatem commodi veritatis itaque tempore possimus, corrupti tempora reprehenderit amet rem et officiis adipisci!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi optio expedita quae, veritatis tempore dicta earum asperiores possimus, ducimus omnis esse sint odit, rem qui. Dolorum recusandae voluptatum quam obcaecati.</p>
+    </main>
+</body>
+</html>
