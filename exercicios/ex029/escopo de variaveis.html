@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo de variáveis</title>
+    <style>
+        :root {
+            --succcess-color: #0f0;
+            --error-color: #f00;
+        }
+        body {
+            color: white;
+            --error-color: orange;
+            background-color: rgb(3, 0, 11);
+        }
+        .container {
+            --error-color: pink;
+        }
+        .div2 {
+            --error-color: #ff0;
+        }
+        strong {
+            color: var(--error-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            <p>lorem, ipsum <strong>dolor</strong></p>
+        </div>
+        <div class="div2">
+            <p>lorem, <strong>ipsum</strong> dolor</p>
+        </div>
+    </div>
+    <p>teste</p>
+</body>
+</html>

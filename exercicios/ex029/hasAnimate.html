@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div.body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #666;
+        }
+        div.container {
+            display: flex;
+            gap: 19px;
+            background-color: #fff;
+            width: 490px;
+            padding: 10px;
+        }
+        .container__animated {
+            background-color: #80000077;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            transition: background-color .3s transform .3s;
+        }
+        
+        .container__animated:hover { 
+             background-color: rgb(97, 26, 26);
+             cursor: pointer;
+             transform: scale(1.2);
+        }
+         
+        
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="container__animated first"></div>
+            <div class="container__animated first"></div>
+            <div class="container__animated second"></div>
+            <div class="container__animated second"></div>
+            <div class="container__animated thrid"></div>
+            <div class="container__animated thrid"></div>
+            <div class="container__animated fourth"></div>
+            <div class="container__animated fourth"></div>
+            <div class="container__animated effect"></div>
+        </div>
+    </div>
+</body>
+</html>

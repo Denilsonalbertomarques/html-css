@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+        div.flex_container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        div.grid_container {
+            display: grid;
+            grid-template-rows: repeat(5, 50px);
+            grid-template-columns: repeat(4, 1fr);
+            gap: .3125rem;
+            padding: .625rem;
+            border: 1px solid #000;
+            border-radius: .5rem;
+        }
+        div#display {
+            background-color: #ccc;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            text-align: right;
+            font-size: 1.5rem;
+            padding: .625rem;
+        }
+        button {
+            padding: .625rem;
+            border: none;
+            outline: 1px solid #000;
+            cursor: pointer;
+        }
+        button#ac {
+            background-color: #90ee90;
+        }
+        button.special {
+            background-color: #87cefa;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex_container">
+        <div class="grid_container">
+            <div id="display">0</div>
+            <button id="ac">AC</button>
+            <button id="parent" class="special">()</button>
+            <button id="porcent" class="special">%</button>
+            <button id="div" class="special">/</button>
+            <button id="seven">7</button>
+            <button id="eight">8</button>
+            <button id="nine">9</button>
+            <button id="mult" class="special">X</button>
+            <button id="four">4</button>
+            <button id="five">5</button>
+            <button id="six">6</button>
+            <button id="sub" class="special">-</button>
+            <button id="one">1</button>
+            <button id="two">2</button>
+            <button id="three">3</button>
+            <button id="plus" class="special">+</button>
+            <button id="zero">0</button>
+            <button id="virg">,</button>
+            <button id="delet">C</button>
+            <button id="igual" class="special">=</button>
+        </div>
+    </div>
+</body>
+</html>
